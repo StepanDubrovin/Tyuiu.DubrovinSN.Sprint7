@@ -146,5 +146,20 @@
   <ItemGroup>
     <None Include="Resources\fyl26wep3gY.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-line-chart-126425.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-clear-3602045.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-open-folder-8406407.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-photo-11918718.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-graph-8780403.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
