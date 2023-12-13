@@ -46,6 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormMedical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMedical.Designer.cs">
+      <DependentUpon>FormMedical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPacient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPacient.Designer.cs">
+      <DependentUpon>FormPacient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGuide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGuide.Designer.cs">
+      <DependentUpon>FormGuide.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +78,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormMedical.resx">
+      <DependentUpon>FormMedical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPacient.resx">
+      <DependentUpon>FormPacient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGuide.resx">
+      <DependentUpon>FormGuide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +101,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +115,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-open-file-4847498.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\direct-download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-information-1055189.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-patient-4465493.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-patient-4465493 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-patient-4465493 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-nurse-10342190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-info-943579.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-information-7542177.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fyl26wep3gY.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
