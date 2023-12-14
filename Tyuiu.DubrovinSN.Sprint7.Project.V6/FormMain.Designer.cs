@@ -45,7 +45,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // buttonInfoRazrab_DSN
             // 
             this.buttonInfoRazrab_DSN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonInfoRazrab_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_information_7542177;
+            this.buttonInfoRazrab_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_id_card_9386768;
             this.buttonInfoRazrab_DSN.Location = new System.Drawing.Point(12, 587);
             this.buttonInfoRazrab_DSN.Name = "buttonInfoRazrab_DSN";
             this.buttonInfoRazrab_DSN.Size = new System.Drawing.Size(76, 77);

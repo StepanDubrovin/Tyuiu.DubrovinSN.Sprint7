@@ -29,154 +29,75 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelUp_DSN = new System.Windows.Forms.Panel();
+            this.groupBoxViltr_DSN = new System.Windows.Forms.GroupBox();
+            this.labelFun_DSN = new System.Windows.Forms.Label();
+            this.groupBoxSort_DSN = new System.Windows.Forms.GroupBox();
+            this.labelSor_DSN = new System.Windows.Forms.Label();
+            this.groupBoxSearch_DSN = new System.Windows.Forms.GroupBox();
+            this.label_Ser_DSN = new System.Windows.Forms.Label();
             this.panelLeft_DSN = new System.Windows.Forms.Panel();
-            this.panelFuncIn_DSN = new System.Windows.Forms.Panel();
-            this.splitter = new System.Windows.Forms.Splitter();
-            this.panelMiddle_DSN = new System.Windows.Forms.Panel();
             this.groupBoxButtons_DSN = new System.Windows.Forms.GroupBox();
             this.buttonDelete_DSN = new System.Windows.Forms.Button();
             this.buttonFunction_DSN = new System.Windows.Forms.Button();
             this.buttonSaveFile_DSN = new System.Windows.Forms.Button();
             this.buttonOpenFile_DSN = new System.Windows.Forms.Button();
-            this.groupBoxSearch_DSN = new System.Windows.Forms.GroupBox();
-            this.textBox_SearchText_DSN = new System.Windows.Forms.TextBox();
-            this.label_Ser_DSN = new System.Windows.Forms.Label();
-            this.groupBoxSort_DSN = new System.Windows.Forms.GroupBox();
-            this.labelSor_DSN = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panelFuncIn_DSN = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dataGridViewInMatrix_DSN = new System.Windows.Forms.DataGridView();
+            this.splitter = new System.Windows.Forms.Splitter();
+            this.panelMiddle_DSN = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.panelUp_DSN.SuspendLayout();
+            this.groupBoxViltr_DSN.SuspendLayout();
+            this.groupBoxSort_DSN.SuspendLayout();
+            this.groupBoxSearch_DSN.SuspendLayout();
             this.panelLeft_DSN.SuspendLayout();
             this.groupBoxButtons_DSN.SuspendLayout();
-            this.groupBoxSearch_DSN.SuspendLayout();
-            this.groupBoxSort_DSN.SuspendLayout();
+            this.panelFuncIn_DSN.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInMatrix_DSN)).BeginInit();
+            this.panelMiddle_DSN.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelUp_DSN
             // 
             this.panelUp_DSN.BackColor = System.Drawing.SystemColors.Control;
+            this.panelUp_DSN.Controls.Add(this.groupBoxViltr_DSN);
             this.panelUp_DSN.Controls.Add(this.groupBoxSort_DSN);
             this.panelUp_DSN.Controls.Add(this.groupBoxSearch_DSN);
             this.panelUp_DSN.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelUp_DSN.Location = new System.Drawing.Point(0, 0);
             this.panelUp_DSN.Name = "panelUp_DSN";
-            this.panelUp_DSN.Size = new System.Drawing.Size(1374, 153);
+            this.panelUp_DSN.Size = new System.Drawing.Size(1379, 153);
             this.panelUp_DSN.TabIndex = 0;
             // 
-            // panelLeft_DSN
+            // groupBoxViltr_DSN
             // 
-            this.panelLeft_DSN.Controls.Add(this.groupBoxButtons_DSN);
-            this.panelLeft_DSN.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelLeft_DSN.Location = new System.Drawing.Point(0, 153);
-            this.panelLeft_DSN.Name = "panelLeft_DSN";
-            this.panelLeft_DSN.Size = new System.Drawing.Size(100, 459);
-            this.panelLeft_DSN.TabIndex = 1;
+            this.groupBoxViltr_DSN.Controls.Add(this.labelFun_DSN);
+            this.groupBoxViltr_DSN.Location = new System.Drawing.Point(447, 27);
+            this.groupBoxViltr_DSN.Name = "groupBoxViltr_DSN";
+            this.groupBoxViltr_DSN.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxViltr_DSN.TabIndex = 2;
+            this.groupBoxViltr_DSN.TabStop = false;
+            this.groupBoxViltr_DSN.Text = "Фильтрация";
             // 
-            // panelFuncIn_DSN
+            // labelFun_DSN
             // 
-            this.panelFuncIn_DSN.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelFuncIn_DSN.Location = new System.Drawing.Point(100, 153);
-            this.panelFuncIn_DSN.Name = "panelFuncIn_DSN";
-            this.panelFuncIn_DSN.Size = new System.Drawing.Size(625, 459);
-            this.panelFuncIn_DSN.TabIndex = 2;
-            // 
-            // splitter
-            // 
-            this.splitter.Location = new System.Drawing.Point(725, 153);
-            this.splitter.Name = "splitter";
-            this.splitter.Size = new System.Drawing.Size(3, 459);
-            this.splitter.TabIndex = 3;
-            this.splitter.TabStop = false;
-            // 
-            // panelMiddle_DSN
-            // 
-            this.panelMiddle_DSN.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMiddle_DSN.Location = new System.Drawing.Point(728, 153);
-            this.panelMiddle_DSN.Name = "panelMiddle_DSN";
-            this.panelMiddle_DSN.Size = new System.Drawing.Size(646, 459);
-            this.panelMiddle_DSN.TabIndex = 4;
-            // 
-            // groupBoxButtons_DSN
-            // 
-            this.groupBoxButtons_DSN.Controls.Add(this.buttonDelete_DSN);
-            this.groupBoxButtons_DSN.Controls.Add(this.buttonFunction_DSN);
-            this.groupBoxButtons_DSN.Controls.Add(this.buttonSaveFile_DSN);
-            this.groupBoxButtons_DSN.Controls.Add(this.buttonOpenFile_DSN);
-            this.groupBoxButtons_DSN.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBoxButtons_DSN.Location = new System.Drawing.Point(0, 0);
-            this.groupBoxButtons_DSN.Name = "groupBoxButtons_DSN";
-            this.groupBoxButtons_DSN.Size = new System.Drawing.Size(100, 459);
-            this.groupBoxButtons_DSN.TabIndex = 0;
-            this.groupBoxButtons_DSN.TabStop = false;
-            this.groupBoxButtons_DSN.Text = "Инструменты";
-            // 
-            // buttonDelete_DSN
-            // 
-            this.buttonDelete_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_clear_3602045;
-            this.buttonDelete_DSN.Location = new System.Drawing.Point(12, 233);
-            this.buttonDelete_DSN.Name = "buttonDelete_DSN";
-            this.buttonDelete_DSN.Size = new System.Drawing.Size(72, 61);
-            this.buttonDelete_DSN.TabIndex = 3;
-            this.buttonDelete_DSN.UseVisualStyleBackColor = true;
-            // 
-            // buttonFunction_DSN
-            // 
-            this.buttonFunction_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_graph_8780403;
-            this.buttonFunction_DSN.Location = new System.Drawing.Point(12, 166);
-            this.buttonFunction_DSN.Name = "buttonFunction_DSN";
-            this.buttonFunction_DSN.Size = new System.Drawing.Size(72, 61);
-            this.buttonFunction_DSN.TabIndex = 2;
-            this.buttonFunction_DSN.UseVisualStyleBackColor = true;
-            // 
-            // buttonSaveFile_DSN
-            // 
-            this.buttonSaveFile_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_photo_11918718;
-            this.buttonSaveFile_DSN.Location = new System.Drawing.Point(12, 99);
-            this.buttonSaveFile_DSN.Name = "buttonSaveFile_DSN";
-            this.buttonSaveFile_DSN.Size = new System.Drawing.Size(72, 61);
-            this.buttonSaveFile_DSN.TabIndex = 1;
-            this.buttonSaveFile_DSN.UseVisualStyleBackColor = true;
-            // 
-            // buttonOpenFile_DSN
-            // 
-            this.buttonOpenFile_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_open_folder_8406407;
-            this.buttonOpenFile_DSN.Location = new System.Drawing.Point(12, 32);
-            this.buttonOpenFile_DSN.Name = "buttonOpenFile_DSN";
-            this.buttonOpenFile_DSN.Size = new System.Drawing.Size(72, 61);
-            this.buttonOpenFile_DSN.TabIndex = 0;
-            this.buttonOpenFile_DSN.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxSearch_DSN
-            // 
-            this.groupBoxSearch_DSN.Controls.Add(this.label_Ser_DSN);
-            this.groupBoxSearch_DSN.Controls.Add(this.textBox_SearchText_DSN);
-            this.groupBoxSearch_DSN.Location = new System.Drawing.Point(12, 26);
-            this.groupBoxSearch_DSN.Name = "groupBoxSearch_DSN";
-            this.groupBoxSearch_DSN.Size = new System.Drawing.Size(189, 101);
-            this.groupBoxSearch_DSN.TabIndex = 0;
-            this.groupBoxSearch_DSN.TabStop = false;
-            this.groupBoxSearch_DSN.Text = "Поиск";
-            // 
-            // textBox_SearchText_DSN
-            // 
-            this.textBox_SearchText_DSN.Location = new System.Drawing.Point(6, 69);
-            this.textBox_SearchText_DSN.Multiline = true;
-            this.textBox_SearchText_DSN.Name = "textBox_SearchText_DSN";
-            this.textBox_SearchText_DSN.Size = new System.Drawing.Size(177, 20);
-            this.textBox_SearchText_DSN.TabIndex = 0;
-            // 
-            // label_Ser_DSN
-            // 
-            this.label_Ser_DSN.AutoSize = true;
-            this.label_Ser_DSN.Location = new System.Drawing.Point(3, 43);
-            this.label_Ser_DSN.Name = "label_Ser_DSN";
-            this.label_Ser_DSN.Size = new System.Drawing.Size(158, 13);
-            this.label_Ser_DSN.TabIndex = 1;
-            this.label_Ser_DSN.Text = "Укажите элемент для поиска";
+            this.labelFun_DSN.AutoSize = true;
+            this.labelFun_DSN.Location = new System.Drawing.Point(7, 41);
+            this.labelFun_DSN.Name = "labelFun_DSN";
+            this.labelFun_DSN.Size = new System.Drawing.Size(168, 13);
+            this.labelFun_DSN.TabIndex = 0;
+            this.labelFun_DSN.Text = "Укажите параметр фильтрации";
             // 
             // groupBoxSort_DSN
             // 
-            this.groupBoxSort_DSN.Controls.Add(this.textBox1);
             this.groupBoxSort_DSN.Controls.Add(this.labelSor_DSN);
             this.groupBoxSort_DSN.Location = new System.Drawing.Point(229, 26);
             this.groupBoxSort_DSN.Name = "groupBoxSort_DSN";
@@ -194,19 +115,165 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.labelSor_DSN.TabIndex = 0;
             this.labelSor_DSN.Text = "Укажите нужную сортировку";
             // 
-            // textBox1
+            // groupBoxSearch_DSN
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 69);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(177, 20);
-            this.textBox1.TabIndex = 1;
+            this.groupBoxSearch_DSN.Controls.Add(this.label_Ser_DSN);
+            this.groupBoxSearch_DSN.Location = new System.Drawing.Point(12, 26);
+            this.groupBoxSearch_DSN.Name = "groupBoxSearch_DSN";
+            this.groupBoxSearch_DSN.Size = new System.Drawing.Size(189, 101);
+            this.groupBoxSearch_DSN.TabIndex = 0;
+            this.groupBoxSearch_DSN.TabStop = false;
+            this.groupBoxSearch_DSN.Text = "Поиск";
+            // 
+            // label_Ser_DSN
+            // 
+            this.label_Ser_DSN.AutoSize = true;
+            this.label_Ser_DSN.Location = new System.Drawing.Point(3, 43);
+            this.label_Ser_DSN.Name = "label_Ser_DSN";
+            this.label_Ser_DSN.Size = new System.Drawing.Size(158, 13);
+            this.label_Ser_DSN.TabIndex = 1;
+            this.label_Ser_DSN.Text = "Укажите элемент для поиска";
+            // 
+            // panelLeft_DSN
+            // 
+            this.panelLeft_DSN.Controls.Add(this.groupBoxButtons_DSN);
+            this.panelLeft_DSN.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeft_DSN.Location = new System.Drawing.Point(0, 153);
+            this.panelLeft_DSN.Name = "panelLeft_DSN";
+            this.panelLeft_DSN.Size = new System.Drawing.Size(100, 516);
+            this.panelLeft_DSN.TabIndex = 1;
+            // 
+            // groupBoxButtons_DSN
+            // 
+            this.groupBoxButtons_DSN.Controls.Add(this.buttonDelete_DSN);
+            this.groupBoxButtons_DSN.Controls.Add(this.buttonFunction_DSN);
+            this.groupBoxButtons_DSN.Controls.Add(this.buttonSaveFile_DSN);
+            this.groupBoxButtons_DSN.Controls.Add(this.buttonOpenFile_DSN);
+            this.groupBoxButtons_DSN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxButtons_DSN.Location = new System.Drawing.Point(0, 0);
+            this.groupBoxButtons_DSN.Name = "groupBoxButtons_DSN";
+            this.groupBoxButtons_DSN.Size = new System.Drawing.Size(100, 516);
+            this.groupBoxButtons_DSN.TabIndex = 0;
+            this.groupBoxButtons_DSN.TabStop = false;
+            this.groupBoxButtons_DSN.Text = "Инструменты";
+            // 
+            // buttonDelete_DSN
+            // 
+            this.buttonDelete_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_clear_3602045;
+            this.buttonDelete_DSN.Location = new System.Drawing.Point(12, 233);
+            this.buttonDelete_DSN.Name = "buttonDelete_DSN";
+            this.buttonDelete_DSN.Size = new System.Drawing.Size(72, 61);
+            this.buttonDelete_DSN.TabIndex = 3;
+            this.toolTip.SetToolTip(this.buttonDelete_DSN, "Очищает таблицу с данными");
+            this.buttonDelete_DSN.UseVisualStyleBackColor = true;
+            // 
+            // buttonFunction_DSN
+            // 
+            this.buttonFunction_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_graph_8780403;
+            this.buttonFunction_DSN.Location = new System.Drawing.Point(12, 166);
+            this.buttonFunction_DSN.Name = "buttonFunction_DSN";
+            this.buttonFunction_DSN.Size = new System.Drawing.Size(72, 61);
+            this.buttonFunction_DSN.TabIndex = 2;
+            this.toolTip.SetToolTip(this.buttonFunction_DSN, "Строит график функции");
+            this.buttonFunction_DSN.UseVisualStyleBackColor = true;
+            this.buttonFunction_DSN.Click += new System.EventHandler(this.buttonFunction_DSN_Click);
+            // 
+            // buttonSaveFile_DSN
+            // 
+            this.buttonSaveFile_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_photo_11918718;
+            this.buttonSaveFile_DSN.Location = new System.Drawing.Point(12, 99);
+            this.buttonSaveFile_DSN.Name = "buttonSaveFile_DSN";
+            this.buttonSaveFile_DSN.Size = new System.Drawing.Size(72, 61);
+            this.buttonSaveFile_DSN.TabIndex = 1;
+            this.toolTip.SetToolTip(this.buttonSaveFile_DSN, "Сохраняет файл");
+            this.buttonSaveFile_DSN.UseVisualStyleBackColor = true;
+            // 
+            // buttonOpenFile_DSN
+            // 
+            this.buttonOpenFile_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_open_folder_8406407;
+            this.buttonOpenFile_DSN.Location = new System.Drawing.Point(12, 32);
+            this.buttonOpenFile_DSN.Name = "buttonOpenFile_DSN";
+            this.buttonOpenFile_DSN.Size = new System.Drawing.Size(72, 61);
+            this.buttonOpenFile_DSN.TabIndex = 0;
+            this.toolTip.SetToolTip(this.buttonOpenFile_DSN, "Открывает файл");
+            this.buttonOpenFile_DSN.UseVisualStyleBackColor = true;
+            this.buttonOpenFile_DSN.Click += new System.EventHandler(this.buttonOpenFile_DSN_Click);
+            // 
+            // panelFuncIn_DSN
+            // 
+            this.panelFuncIn_DSN.Controls.Add(this.groupBox1);
+            this.panelFuncIn_DSN.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelFuncIn_DSN.Location = new System.Drawing.Point(100, 153);
+            this.panelFuncIn_DSN.Name = "panelFuncIn_DSN";
+            this.panelFuncIn_DSN.Size = new System.Drawing.Size(625, 516);
+            this.panelFuncIn_DSN.TabIndex = 2;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.dataGridViewInMatrix_DSN);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(625, 516);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Исходная таблица";
+            // 
+            // dataGridViewInMatrix_DSN
+            // 
+            this.dataGridViewInMatrix_DSN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewInMatrix_DSN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewInMatrix_DSN.Location = new System.Drawing.Point(3, 16);
+            this.dataGridViewInMatrix_DSN.Name = "dataGridViewInMatrix_DSN";
+            this.dataGridViewInMatrix_DSN.Size = new System.Drawing.Size(619, 497);
+            this.dataGridViewInMatrix_DSN.TabIndex = 0;
+            // 
+            // splitter
+            // 
+            this.splitter.Location = new System.Drawing.Point(725, 153);
+            this.splitter.Name = "splitter";
+            this.splitter.Size = new System.Drawing.Size(3, 516);
+            this.splitter.TabIndex = 3;
+            this.splitter.TabStop = false;
+            // 
+            // panelMiddle_DSN
+            // 
+            this.panelMiddle_DSN.Controls.Add(this.groupBox2);
+            this.panelMiddle_DSN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMiddle_DSN.Location = new System.Drawing.Point(728, 153);
+            this.panelMiddle_DSN.Name = "panelMiddle_DSN";
+            this.panelMiddle_DSN.Size = new System.Drawing.Size(651, 516);
+            this.panelMiddle_DSN.TabIndex = 4;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dataGridView2);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.Location = new System.Drawing.Point(0, 0);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(651, 516);
+            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Итоговая таблица";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 16);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(645, 497);
+            this.dataGridView2.TabIndex = 0;
+            // 
+            // toolTip
+            // 
+            this.toolTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             // 
             // FormPacient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1374, 612);
+            this.ClientSize = new System.Drawing.Size(1379, 669);
             this.Controls.Add(this.panelMiddle_DSN);
             this.Controls.Add(this.splitter);
             this.Controls.Add(this.panelFuncIn_DSN);
@@ -216,12 +283,20 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.Text = "Пациенты";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelUp_DSN.ResumeLayout(false);
-            this.panelLeft_DSN.ResumeLayout(false);
-            this.groupBoxButtons_DSN.ResumeLayout(false);
-            this.groupBoxSearch_DSN.ResumeLayout(false);
-            this.groupBoxSearch_DSN.PerformLayout();
+            this.groupBoxViltr_DSN.ResumeLayout(false);
+            this.groupBoxViltr_DSN.PerformLayout();
             this.groupBoxSort_DSN.ResumeLayout(false);
             this.groupBoxSort_DSN.PerformLayout();
+            this.groupBoxSearch_DSN.ResumeLayout(false);
+            this.groupBoxSearch_DSN.PerformLayout();
+            this.panelLeft_DSN.ResumeLayout(false);
+            this.groupBoxButtons_DSN.ResumeLayout(false);
+            this.panelFuncIn_DSN.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInMatrix_DSN)).EndInit();
+            this.panelMiddle_DSN.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -240,9 +315,14 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         private System.Windows.Forms.Button buttonDelete_DSN;
         private System.Windows.Forms.GroupBox groupBoxSearch_DSN;
         private System.Windows.Forms.Label label_Ser_DSN;
-        private System.Windows.Forms.TextBox textBox_SearchText_DSN;
         private System.Windows.Forms.GroupBox groupBoxSort_DSN;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label labelSor_DSN;
+        private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.GroupBox groupBoxViltr_DSN;
+        private System.Windows.Forms.Label labelFun_DSN;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DataGridView dataGridViewInMatrix_DSN;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }
