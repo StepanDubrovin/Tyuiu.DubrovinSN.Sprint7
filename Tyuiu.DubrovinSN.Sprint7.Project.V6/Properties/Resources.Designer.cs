@@ -83,6 +83,16 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap free_icon_filtering_6303429 {
+            get {
+                object obj = ResourceManager.GetObject("free-icon-filtering-6303429", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap free_icon_graph_8780403 {
             get {
                 object obj = ResourceManager.GetObject("free-icon-graph-8780403", resourceCulture);

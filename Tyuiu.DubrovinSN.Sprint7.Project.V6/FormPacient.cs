@@ -14,9 +14,12 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
 {
     public partial class FormPacient : Form
     {
+        private BindingSource bindingSource = new BindingSource();
+        private DataTable dataTable = new DataTable();
         public FormPacient()
         {
             InitializeComponent();
+
         }
         static string openFile;
         static int rows;
@@ -40,23 +43,19 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
                 columns = matrix.GetLength(1);
                 dataGridViewInMatrix_DSN.RowCount = rows;
                 dataGridViewInMatrix_DSN.ColumnCount = columns;
-
-
-                for (int i = 1; i < rows; i++)
+                for (int i = 0; i < rows; i++)
                 {
-                    for (int j = 1; j < columns; j++)
+                    for (int j = 0; j < columns; j++)
                     {
                         dataGridViewInMatrix_DSN.Rows[i].Cells[j].Value = matrix[i, j];
                         dataGridViewInMatrix_DSN.Rows[i].Cells[j].Selected = false;
                     }
                 }
-                dataGridViewInMatrix_DSN.Columns[0].Width = 200;
-                dataGridViewInMatrix_DSN.Columns[1].Width = 150;
-                dataGridViewInMatrix_DSN.Columns[3].Width = 150;
+                dataGridViewInMatrix_DSN.AutoResizeColumns();
             }
             catch
             {
-                MessageBox.Show("Проблема с открытием файла", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Проблема с открфтием файла", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -101,10 +100,38 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
                     MessageBox.Show("Файл успешно сохранен", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-            catch (Exception ex)
+            catch 
             {
                 MessageBox.Show("Не удалось сохранить файл","Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void buttonViltr_DSN_Click(object sender, EventArgs e)
+        {
+            string filterValue = textBoxVibor_DSN.Text.ToLower();
+
+            for (int i = 0; i < dataGridViewInMatrix_DSN.Rows.Count - 1; i++) 
+            {
+                bool rowShouldBeVisible = false;
+
+                for (int j = 0; j < dataGridViewInMatrix_DSN.Columns.Count; j++)
+                {
+                    var cellValue = dataGridViewInMatrix_DSN.Rows[i].Cells[j].Value?.ToString()?.ToLower();
+
+                    if (cellValue != null && cellValue.Contains(filterValue))
+                    {
+                        rowShouldBeVisible = true;
+                        break; 
+                    }
+                }
+
+                dataGridViewInMatrix_DSN.Rows[i].Visible = rowShouldBeVisible;
+            }
+        }
+
+        private void buttonDelete_DSN_Click(object sender, EventArgs e)
+        {
+            dataGridViewInMatrix_DSN.Rows.Clear();
         }
     }
 }

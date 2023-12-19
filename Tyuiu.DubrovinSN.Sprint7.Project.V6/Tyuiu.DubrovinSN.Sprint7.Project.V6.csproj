@@ -180,5 +180,8 @@
       <Name>Tyuiu.DubrovinSN.Sprint7.Project.V6.Lib</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-filtering-6303429.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

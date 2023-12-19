@@ -39,16 +39,20 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.label_Ser_DSN = new System.Windows.Forms.Label();
             this.panelLeft_DSN = new System.Windows.Forms.Panel();
             this.groupBoxButtons_DSN = new System.Windows.Forms.GroupBox();
-            this.buttonDelete_DSN = new System.Windows.Forms.Button();
-            this.buttonFunction_DSN = new System.Windows.Forms.Button();
-            this.buttonSaveFile_DSN = new System.Windows.Forms.Button();
-            this.buttonOpenFile_DSN = new System.Windows.Forms.Button();
             this.panelFuncIn_DSN = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox_Input_DSN = new System.Windows.Forms.GroupBox();
             this.dataGridViewInMatrix_DSN = new System.Windows.Forms.DataGridView();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.comboBoxInfo_DSN = new System.Windows.Forms.ComboBox();
+            this.textBoxVibor_DSN = new System.Windows.Forms.TextBox();
+            this.labelVibor_DSN = new System.Windows.Forms.Label();
+            this.buttonViltr_DSN = new System.Windows.Forms.Button();
+            this.buttonDelete_DSN = new System.Windows.Forms.Button();
+            this.buttonFunction_DSN = new System.Windows.Forms.Button();
+            this.buttonSaveFile_DSN = new System.Windows.Forms.Button();
+            this.buttonOpenFile_DSN = new System.Windows.Forms.Button();
             this.panelUp_DSN.SuspendLayout();
             this.groupBoxViltr_DSN.SuspendLayout();
             this.groupBoxSort_DSN.SuspendLayout();
@@ -56,7 +60,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.panelLeft_DSN.SuspendLayout();
             this.groupBoxButtons_DSN.SuspendLayout();
             this.panelFuncIn_DSN.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.groupBox_Input_DSN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInMatrix_DSN)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,10 +78,13 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // 
             // groupBoxViltr_DSN
             // 
+            this.groupBoxViltr_DSN.Controls.Add(this.labelVibor_DSN);
+            this.groupBoxViltr_DSN.Controls.Add(this.textBoxVibor_DSN);
+            this.groupBoxViltr_DSN.Controls.Add(this.comboBoxInfo_DSN);
             this.groupBoxViltr_DSN.Controls.Add(this.labelFun_DSN);
-            this.groupBoxViltr_DSN.Location = new System.Drawing.Point(447, 27);
+            this.groupBoxViltr_DSN.Location = new System.Drawing.Point(452, 27);
             this.groupBoxViltr_DSN.Name = "groupBoxViltr_DSN";
-            this.groupBoxViltr_DSN.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxViltr_DSN.Size = new System.Drawing.Size(470, 100);
             this.groupBoxViltr_DSN.TabIndex = 2;
             this.groupBoxViltr_DSN.TabStop = false;
             this.groupBoxViltr_DSN.Text = "Фильтрация";
@@ -85,11 +92,11 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // labelFun_DSN
             // 
             this.labelFun_DSN.AutoSize = true;
-            this.labelFun_DSN.Location = new System.Drawing.Point(7, 41);
+            this.labelFun_DSN.Location = new System.Drawing.Point(6, 26);
             this.labelFun_DSN.Name = "labelFun_DSN";
-            this.labelFun_DSN.Size = new System.Drawing.Size(168, 13);
+            this.labelFun_DSN.Size = new System.Drawing.Size(181, 13);
             this.labelFun_DSN.TabIndex = 0;
-            this.labelFun_DSN.Text = "Укажите параметр фильтрации";
+            this.labelFun_DSN.Text = "Укажите столбец для фильтрации";
             // 
             // groupBoxSort_DSN
             // 
@@ -140,6 +147,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // 
             // groupBoxButtons_DSN
             // 
+            this.groupBoxButtons_DSN.Controls.Add(this.buttonViltr_DSN);
             this.groupBoxButtons_DSN.Controls.Add(this.buttonDelete_DSN);
             this.groupBoxButtons_DSN.Controls.Add(this.buttonFunction_DSN);
             this.groupBoxButtons_DSN.Controls.Add(this.buttonSaveFile_DSN);
@@ -152,6 +160,87 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.groupBoxButtons_DSN.TabStop = false;
             this.groupBoxButtons_DSN.Text = "Инструменты";
             // 
+            // panelFuncIn_DSN
+            // 
+            this.panelFuncIn_DSN.Controls.Add(this.groupBox_Input_DSN);
+            this.panelFuncIn_DSN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelFuncIn_DSN.Location = new System.Drawing.Point(100, 153);
+            this.panelFuncIn_DSN.Name = "panelFuncIn_DSN";
+            this.panelFuncIn_DSN.Size = new System.Drawing.Size(1279, 516);
+            this.panelFuncIn_DSN.TabIndex = 2;
+            // 
+            // groupBox_Input_DSN
+            // 
+            this.groupBox_Input_DSN.Controls.Add(this.dataGridViewInMatrix_DSN);
+            this.groupBox_Input_DSN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox_Input_DSN.Location = new System.Drawing.Point(0, 0);
+            this.groupBox_Input_DSN.Name = "groupBox_Input_DSN";
+            this.groupBox_Input_DSN.Size = new System.Drawing.Size(1279, 516);
+            this.groupBox_Input_DSN.TabIndex = 0;
+            this.groupBox_Input_DSN.TabStop = false;
+            this.groupBox_Input_DSN.Text = "Информация о пациентах";
+            // 
+            // dataGridViewInMatrix_DSN
+            // 
+            this.dataGridViewInMatrix_DSN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewInMatrix_DSN.ColumnHeadersVisible = false;
+            this.dataGridViewInMatrix_DSN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewInMatrix_DSN.Location = new System.Drawing.Point(3, 16);
+            this.dataGridViewInMatrix_DSN.Name = "dataGridViewInMatrix_DSN";
+            this.dataGridViewInMatrix_DSN.RowHeadersVisible = false;
+            this.dataGridViewInMatrix_DSN.Size = new System.Drawing.Size(1273, 497);
+            this.dataGridViewInMatrix_DSN.TabIndex = 0;
+            // 
+            // toolTip
+            // 
+            this.toolTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog1";
+            // 
+            // comboBoxInfo_DSN
+            // 
+            this.comboBoxInfo_DSN.FormattingEnabled = true;
+            this.comboBoxInfo_DSN.Items.AddRange(new object[] {
+            "Фамилия ",
+            "Имя",
+            "Отчество",
+            "Диагноз",
+            "Амбулаторное лечение",
+            "На диспансерном учете"});
+            this.comboBoxInfo_DSN.Location = new System.Drawing.Point(9, 52);
+            this.comboBoxInfo_DSN.Name = "comboBoxInfo_DSN";
+            this.comboBoxInfo_DSN.Size = new System.Drawing.Size(178, 21);
+            this.comboBoxInfo_DSN.TabIndex = 1;
+            // 
+            // textBoxVibor_DSN
+            // 
+            this.textBoxVibor_DSN.Location = new System.Drawing.Point(263, 52);
+            this.textBoxVibor_DSN.Multiline = true;
+            this.textBoxVibor_DSN.Name = "textBoxVibor_DSN";
+            this.textBoxVibor_DSN.Size = new System.Drawing.Size(178, 20);
+            this.textBoxVibor_DSN.TabIndex = 2;
+            // 
+            // labelVibor_DSN
+            // 
+            this.labelVibor_DSN.AutoSize = true;
+            this.labelVibor_DSN.Location = new System.Drawing.Point(260, 26);
+            this.labelVibor_DSN.Name = "labelVibor_DSN";
+            this.labelVibor_DSN.Size = new System.Drawing.Size(204, 13);
+            this.labelVibor_DSN.TabIndex = 3;
+            this.labelVibor_DSN.Text = "Укажите нужный парметр фильтрации";
+            // 
+            // buttonViltr_DSN
+            // 
+            this.buttonViltr_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_filtering_6303429;
+            this.buttonViltr_DSN.Location = new System.Drawing.Point(12, 300);
+            this.buttonViltr_DSN.Name = "buttonViltr_DSN";
+            this.buttonViltr_DSN.Size = new System.Drawing.Size(72, 61);
+            this.buttonViltr_DSN.TabIndex = 4;
+            this.buttonViltr_DSN.UseVisualStyleBackColor = true;
+            this.buttonViltr_DSN.Click += new System.EventHandler(this.buttonViltr_DSN_Click);
+            // 
             // buttonDelete_DSN
             // 
             this.buttonDelete_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_clear_3602045;
@@ -161,6 +250,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.buttonDelete_DSN.TabIndex = 3;
             this.toolTip.SetToolTip(this.buttonDelete_DSN, "Очищает таблицу с данными");
             this.buttonDelete_DSN.UseVisualStyleBackColor = true;
+            this.buttonDelete_DSN.Click += new System.EventHandler(this.buttonDelete_DSN_Click);
             // 
             // buttonFunction_DSN
             // 
@@ -195,45 +285,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.buttonOpenFile_DSN.UseVisualStyleBackColor = true;
             this.buttonOpenFile_DSN.Click += new System.EventHandler(this.buttonOpenFile_DSN_Click);
             // 
-            // panelFuncIn_DSN
-            // 
-            this.panelFuncIn_DSN.Controls.Add(this.groupBox1);
-            this.panelFuncIn_DSN.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFuncIn_DSN.Location = new System.Drawing.Point(100, 153);
-            this.panelFuncIn_DSN.Name = "panelFuncIn_DSN";
-            this.panelFuncIn_DSN.Size = new System.Drawing.Size(1279, 516);
-            this.panelFuncIn_DSN.TabIndex = 2;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.dataGridViewInMatrix_DSN);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1279, 516);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Исходная таблица";
-            // 
-            // dataGridViewInMatrix_DSN
-            // 
-            this.dataGridViewInMatrix_DSN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewInMatrix_DSN.ColumnHeadersVisible = false;
-            this.dataGridViewInMatrix_DSN.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewInMatrix_DSN.Location = new System.Drawing.Point(3, 16);
-            this.dataGridViewInMatrix_DSN.Name = "dataGridViewInMatrix_DSN";
-            this.dataGridViewInMatrix_DSN.RowHeadersVisible = false;
-            this.dataGridViewInMatrix_DSN.Size = new System.Drawing.Size(1273, 497);
-            this.dataGridViewInMatrix_DSN.TabIndex = 0;
-            // 
-            // toolTip
-            // 
-            this.toolTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            // 
-            // openFileDialog
-            // 
-            this.openFileDialog.FileName = "openFileDialog1";
-            // 
             // FormPacient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -255,7 +306,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.panelLeft_DSN.ResumeLayout(false);
             this.groupBoxButtons_DSN.ResumeLayout(false);
             this.panelFuncIn_DSN.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
+            this.groupBox_Input_DSN.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInMatrix_DSN)).EndInit();
             this.ResumeLayout(false);
 
@@ -278,9 +329,13 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.GroupBox groupBoxViltr_DSN;
         private System.Windows.Forms.Label labelFun_DSN;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox_Input_DSN;
         private System.Windows.Forms.DataGridView dataGridViewInMatrix_DSN;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
+        private System.Windows.Forms.ComboBox comboBoxInfo_DSN;
+        private System.Windows.Forms.Label labelVibor_DSN;
+        private System.Windows.Forms.TextBox textBoxVibor_DSN;
+        private System.Windows.Forms.Button buttonViltr_DSN;
     }
 }
