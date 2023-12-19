@@ -46,11 +46,9 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.panelFuncIn_DSN = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridViewInMatrix_DSN = new System.Windows.Forms.DataGridView();
-            this.splitter = new System.Windows.Forms.Splitter();
-            this.panelMiddle_DSN = new System.Windows.Forms.Panel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.panelUp_DSN.SuspendLayout();
             this.groupBoxViltr_DSN.SuspendLayout();
             this.groupBoxSort_DSN.SuspendLayout();
@@ -60,9 +58,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.panelFuncIn_DSN.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInMatrix_DSN)).BeginInit();
-            this.panelMiddle_DSN.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelUp_DSN
@@ -187,6 +182,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.buttonSaveFile_DSN.TabIndex = 1;
             this.toolTip.SetToolTip(this.buttonSaveFile_DSN, "Сохраняет файл");
             this.buttonSaveFile_DSN.UseVisualStyleBackColor = true;
+            this.buttonSaveFile_DSN.Click += new System.EventHandler(this.buttonSaveFile_DSN_Click);
             // 
             // buttonOpenFile_DSN
             // 
@@ -202,10 +198,10 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // panelFuncIn_DSN
             // 
             this.panelFuncIn_DSN.Controls.Add(this.groupBox1);
-            this.panelFuncIn_DSN.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelFuncIn_DSN.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFuncIn_DSN.Location = new System.Drawing.Point(100, 153);
             this.panelFuncIn_DSN.Name = "panelFuncIn_DSN";
-            this.panelFuncIn_DSN.Size = new System.Drawing.Size(625, 516);
+            this.panelFuncIn_DSN.Size = new System.Drawing.Size(1279, 516);
             this.panelFuncIn_DSN.TabIndex = 2;
             // 
             // groupBox1
@@ -214,7 +210,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(625, 516);
+            this.groupBox1.Size = new System.Drawing.Size(1279, 516);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Исходная таблица";
@@ -222,60 +218,27 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // dataGridViewInMatrix_DSN
             // 
             this.dataGridViewInMatrix_DSN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewInMatrix_DSN.ColumnHeadersVisible = false;
             this.dataGridViewInMatrix_DSN.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewInMatrix_DSN.Location = new System.Drawing.Point(3, 16);
             this.dataGridViewInMatrix_DSN.Name = "dataGridViewInMatrix_DSN";
-            this.dataGridViewInMatrix_DSN.Size = new System.Drawing.Size(619, 497);
+            this.dataGridViewInMatrix_DSN.RowHeadersVisible = false;
+            this.dataGridViewInMatrix_DSN.Size = new System.Drawing.Size(1273, 497);
             this.dataGridViewInMatrix_DSN.TabIndex = 0;
-            // 
-            // splitter
-            // 
-            this.splitter.Location = new System.Drawing.Point(725, 153);
-            this.splitter.Name = "splitter";
-            this.splitter.Size = new System.Drawing.Size(3, 516);
-            this.splitter.TabIndex = 3;
-            this.splitter.TabStop = false;
-            // 
-            // panelMiddle_DSN
-            // 
-            this.panelMiddle_DSN.Controls.Add(this.groupBox2);
-            this.panelMiddle_DSN.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMiddle_DSN.Location = new System.Drawing.Point(728, 153);
-            this.panelMiddle_DSN.Name = "panelMiddle_DSN";
-            this.panelMiddle_DSN.Size = new System.Drawing.Size(651, 516);
-            this.panelMiddle_DSN.TabIndex = 4;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.dataGridView2);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(0, 0);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(651, 516);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Итоговая таблица";
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 16);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(645, 497);
-            this.dataGridView2.TabIndex = 0;
             // 
             // toolTip
             // 
             this.toolTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog1";
             // 
             // FormPacient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1379, 669);
-            this.Controls.Add(this.panelMiddle_DSN);
-            this.Controls.Add(this.splitter);
             this.Controls.Add(this.panelFuncIn_DSN);
             this.Controls.Add(this.panelLeft_DSN);
             this.Controls.Add(this.panelUp_DSN);
@@ -294,9 +257,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.panelFuncIn_DSN.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInMatrix_DSN)).EndInit();
-            this.panelMiddle_DSN.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -306,8 +266,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         private System.Windows.Forms.Panel panelUp_DSN;
         private System.Windows.Forms.Panel panelLeft_DSN;
         private System.Windows.Forms.Panel panelFuncIn_DSN;
-        private System.Windows.Forms.Splitter splitter;
-        private System.Windows.Forms.Panel panelMiddle_DSN;
         private System.Windows.Forms.GroupBox groupBoxButtons_DSN;
         private System.Windows.Forms.Button buttonFunction_DSN;
         private System.Windows.Forms.Button buttonSaveFile_DSN;
@@ -321,8 +279,8 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         private System.Windows.Forms.GroupBox groupBoxViltr_DSN;
         private System.Windows.Forms.Label labelFun_DSN;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridViewInMatrix_DSN;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog;
     }
 }

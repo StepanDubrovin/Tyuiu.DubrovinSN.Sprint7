@@ -9,23 +9,17 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6.Lib
 {
     public class DataService
     {
-        public int[,] GetMatrix(string path)
+        public string[,] GetMatrix(string path)
         {
-            string file = File.ReadAllText(path);
-            file = file.Replace('\n', '\r');
-            string[] line = file.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
-
-            int rows = line.Length;
-            int cols = line[0].Split(';').Length;
-            int[,] matrix = new int[rows, cols];
-
-            for (int i = 0; i < rows; i++)
+            string[] num = File.ReadAllLines(path, Encoding.GetEncoding(1251));
+            int columns = num[0].Split(';').Length;
+            int rows = num.Length;
+            string[,] matrix = new string[rows, columns];
+            for (int i = 0; i < num.Length; i++)
             {
-                string[] values = line[i].Split(';');
-                for (int j = 0; j < cols; j++)
-                {
-                    matrix[i, j] = Convert.ToInt32(values[j]);
-                }
+                string numIndex = num[i];
+                string[] numArray = numIndex.Split(';');
+                for (int j = 0; j < numArray.Length; j++) matrix[i, j] = numArray[j];
             }
             return matrix;
         }

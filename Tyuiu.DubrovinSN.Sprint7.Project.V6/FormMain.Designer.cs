@@ -100,7 +100,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.Controls.Add(this.buttonPatients_DSN);
             this.Controls.Add(this.buttonInfo_DSN);
             this.Name = "FormMain";
-            this.Text = "Информация о пациаентах и докторах ГАУЗ ТО Городской поликлиники №1";
+            this.Text = "Информация о пациаентах Городской поликлиники";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
