@@ -40,6 +40,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // 
             chartArea1.Name = "ChartArea1";
             this.chartFunction_DSN.ChartAreas.Add(chartArea1);
+            this.chartFunction_DSN.Dock = System.Windows.Forms.DockStyle.Fill;
             legend1.Name = "Legend1";
             this.chartFunction_DSN.Legends.Add(legend1);
             this.chartFunction_DSN.Location = new System.Drawing.Point(0, 0);
@@ -58,6 +59,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.chartFunction_DSN);
             this.Name = "FormFunction";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "График функции";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.chartFunction_DSN)).EndInit();
