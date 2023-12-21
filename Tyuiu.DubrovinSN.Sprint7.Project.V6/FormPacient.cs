@@ -63,7 +63,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         {
             try
             {
-                saveFileDialog.FileName = "OutPutFileTask7.csv";
+                saveFileDialog.FileName = "Информация о пациентах.csv";
                 saveFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
 
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
