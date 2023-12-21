@@ -83,6 +83,16 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap free_icon_doctor_patient_6401436 {
+            get {
+                object obj = ResourceManager.GetObject("free-icon-doctor-patient-6401436", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap free_icon_filtering_6303429 {
             get {
                 object obj = ResourceManager.GetObject("free-icon-filtering-6303429", resourceCulture);
@@ -216,6 +226,16 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties {
         internal static System.Drawing.Bitmap free_icon_photo_11918718 {
             get {
                 object obj = ResourceManager.GetObject("free-icon-photo-11918718", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap free_icon_search_4194705 {
+            get {
+                object obj = ResourceManager.GetObject("free-icon-search-4194705", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

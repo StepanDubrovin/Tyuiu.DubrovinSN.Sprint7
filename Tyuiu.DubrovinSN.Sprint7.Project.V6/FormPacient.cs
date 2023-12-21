@@ -55,7 +55,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             }
             catch
             {
-                MessageBox.Show("Проблема с открфтием файла", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Проблема с открытием файла", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -109,29 +109,46 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         private void buttonViltr_DSN_Click(object sender, EventArgs e)
         {
             string filterValue = textBoxVibor_DSN.Text.ToLower();
-
-            for (int i = 0; i < dataGridViewInMatrix_DSN.Rows.Count - 1; i++) 
+            for (int i = 0; i < dataGridViewInMatrix_DSN.RowCount - 1; i++) 
             {
-                bool rowShouldBeVisible = false;
-
-                for (int j = 0; j < dataGridViewInMatrix_DSN.Columns.Count; j++)
+                bool rowVisible = false;
+                for (int j = 0; j < dataGridViewInMatrix_DSN.ColumnCount; j++)
                 {
                     var cellValue = dataGridViewInMatrix_DSN.Rows[i].Cells[j].Value?.ToString()?.ToLower();
-
-                    if (cellValue != null && cellValue.Contains(filterValue))
-                    {
-                        rowShouldBeVisible = true;
-                        break; 
-                    }
+                    if (cellValue != null && cellValue == filterValue)
+                        {
+                            rowVisible = true;
+                            break;
+                        }
                 }
-
-                dataGridViewInMatrix_DSN.Rows[i].Visible = rowShouldBeVisible;
+                dataGridViewInMatrix_DSN.Rows[i].Visible = rowVisible;
             }
         }
 
         private void buttonDelete_DSN_Click(object sender, EventArgs e)
         {
             dataGridViewInMatrix_DSN.Rows.Clear();
+        }
+
+        private void buttonSerch_DSN_Click(object sender, EventArgs e)
+        {
+            string serchValue = textBoxReserch_DSN.Text.ToLower();
+            for (int i = 0; i < dataGridViewInMatrix_DSN.RowCount; i++)
+            {
+                dataGridViewInMatrix_DSN.Rows[i].Selected = false;
+                for (int j = 0; j < dataGridViewInMatrix_DSN.ColumnCount; j++)
+                {
+                    var serchEl = dataGridViewInMatrix_DSN.Rows[i].Cells[j].Value?.ToString()?.ToLower();
+                    if (serchEl != null)
+                    {
+                        if (serchEl.ToString().Contains(textBoxReserch_DSN.Text))
+                        {
+                            dataGridViewInMatrix_DSN.Rows[i].Selected = true;
+                            break;
+                        }
+                    }
+                }
+            }
         }
     }
 }

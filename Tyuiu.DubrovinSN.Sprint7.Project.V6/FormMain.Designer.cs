@@ -32,7 +32,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.components = new System.ComponentModel.Container();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.buttonInfoRazrab_DSN = new System.Windows.Forms.Button();
-            this.buttonMedical_DSN = new System.Windows.Forms.Button();
             this.buttonPatients_DSN = new System.Windows.Forms.Button();
             this.buttonInfo_DSN = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -44,35 +43,24 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // 
             // buttonInfoRazrab_DSN
             // 
-            this.buttonInfoRazrab_DSN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonInfoRazrab_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_id_card_9386768;
-            this.buttonInfoRazrab_DSN.Location = new System.Drawing.Point(12, 587);
+            this.buttonInfoRazrab_DSN.Location = new System.Drawing.Point(12, 12);
             this.buttonInfoRazrab_DSN.Name = "buttonInfoRazrab_DSN";
-            this.buttonInfoRazrab_DSN.Size = new System.Drawing.Size(76, 77);
+            this.buttonInfoRazrab_DSN.Size = new System.Drawing.Size(110, 106);
             this.buttonInfoRazrab_DSN.TabIndex = 5;
             this.toolTip.SetToolTip(this.buttonInfoRazrab_DSN, "Информация о программе");
             this.buttonInfoRazrab_DSN.UseVisualStyleBackColor = true;
             this.buttonInfoRazrab_DSN.Click += new System.EventHandler(this.buttonInfoRazrab_DSN_Click);
             // 
-            // buttonMedical_DSN
-            // 
-            this.buttonMedical_DSN.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.buttonMedical_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_nurse_10342190;
-            this.buttonMedical_DSN.Location = new System.Drawing.Point(891, 163);
-            this.buttonMedical_DSN.Name = "buttonMedical_DSN";
-            this.buttonMedical_DSN.Size = new System.Drawing.Size(314, 296);
-            this.buttonMedical_DSN.TabIndex = 4;
-            this.toolTip.SetToolTip(this.buttonMedical_DSN, "Инормация о врачах");
-            this.buttonMedical_DSN.UseVisualStyleBackColor = true;
-            this.buttonMedical_DSN.Click += new System.EventHandler(this.buttonMedical_DSN_Click);
-            // 
             // buttonPatients_DSN
             // 
-            this.buttonPatients_DSN.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.buttonPatients_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_patient_4465493__2_;
-            this.buttonPatients_DSN.Location = new System.Drawing.Point(12, 163);
+            this.buttonPatients_DSN.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonPatients_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_doctor_patient_6401436;
+            this.buttonPatients_DSN.Location = new System.Drawing.Point(128, 12);
             this.buttonPatients_DSN.Name = "buttonPatients_DSN";
-            this.buttonPatients_DSN.Size = new System.Drawing.Size(314, 296);
+            this.buttonPatients_DSN.Size = new System.Drawing.Size(1077, 652);
             this.buttonPatients_DSN.TabIndex = 3;
             this.toolTip.SetToolTip(this.buttonPatients_DSN, "Информация о пациентах");
             this.buttonPatients_DSN.UseVisualStyleBackColor = true;
@@ -80,11 +68,11 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // 
             // buttonInfo_DSN
             // 
-            this.buttonInfo_DSN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonInfo_DSN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonInfo_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_info_943579;
-            this.buttonInfo_DSN.Location = new System.Drawing.Point(1129, 587);
+            this.buttonInfo_DSN.Location = new System.Drawing.Point(12, 558);
             this.buttonInfo_DSN.Name = "buttonInfo_DSN";
-            this.buttonInfo_DSN.Size = new System.Drawing.Size(76, 77);
+            this.buttonInfo_DSN.Size = new System.Drawing.Size(110, 106);
             this.buttonInfo_DSN.TabIndex = 2;
             this.toolTip.SetToolTip(this.buttonInfo_DSN, "Руководство");
             this.buttonInfo_DSN.UseVisualStyleBackColor = true;
@@ -96,7 +84,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1217, 676);
             this.Controls.Add(this.buttonInfoRazrab_DSN);
-            this.Controls.Add(this.buttonMedical_DSN);
             this.Controls.Add(this.buttonPatients_DSN);
             this.Controls.Add(this.buttonInfo_DSN);
             this.Name = "FormMain";
@@ -109,7 +96,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         #endregion
         private System.Windows.Forms.Button buttonInfo_DSN;
         private System.Windows.Forms.Button buttonPatients_DSN;
-        private System.Windows.Forms.Button buttonMedical_DSN;
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.Button buttonInfoRazrab_DSN;
     }

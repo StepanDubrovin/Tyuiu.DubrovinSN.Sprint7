@@ -35,10 +35,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             formPacient.ShowDialog();
         }
 
-        private void buttonMedical_DSN_Click(object sender, EventArgs e)
-        {
-            FormMedical formMed = new FormMedical();
-            formMed.ShowDialog();
-        }
+        
     }
 }

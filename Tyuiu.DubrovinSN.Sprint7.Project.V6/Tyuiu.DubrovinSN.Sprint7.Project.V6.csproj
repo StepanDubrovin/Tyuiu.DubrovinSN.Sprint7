@@ -53,12 +53,6 @@
     <Compile Include="FormFunction.Designer.cs">
       <DependentUpon>FormFunction.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMedical.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormMedical.Designer.cs">
-      <DependentUpon>FormMedical.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormPacient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,9 +81,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormFunction.resx">
       <DependentUpon>FormFunction.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormMedical.resx">
-      <DependentUpon>FormMedical.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPacient.resx">
       <DependentUpon>FormPacient.cs</DependentUpon>
@@ -182,6 +173,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\free-icon-filtering-6303429.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-doctor-patient-6401436.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-search-4194705.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
