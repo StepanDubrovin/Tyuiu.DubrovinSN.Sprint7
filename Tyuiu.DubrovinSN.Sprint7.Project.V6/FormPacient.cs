@@ -14,13 +14,12 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
 {
     public partial class FormPacient : Form
     {
-        private BindingSource bindingSource = new BindingSource();
-        private DataTable dataTable = new DataTable();
+        
         public FormPacient()
         {
             InitializeComponent();
-
         }
+        string path = @"C:\C#\Tyuiu.DubrovinSN.Sprint7\Tyuiu.DubrovinSN.Sprint7.Project.V6\bin\Debug\Информация о пациентах.csv";
         static string openFile;
         static int rows;
         static int columns;
@@ -100,28 +99,31 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
                     MessageBox.Show("Файл успешно сохранен", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-            catch 
+            catch
             {
-                MessageBox.Show("Не удалось сохранить файл","Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Не удалось сохранить файл", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void buttonViltr_DSN_Click(object sender, EventArgs e)
         {
-            string filterValue = textBoxVibor_DSN.Text.ToLower();
-            for (int i = 0; i < dataGridViewInMatrix_DSN.RowCount - 1; i++) 
+            for (int i = 0; i < dataGridViewInMatrix_DSN.RowCount - 1; i++)
             {
-                bool rowVisible = false;
+                string filterValue = textBoxVibor_DSN.Text.ToLower();
+                dataGridViewInMatrix_DSN.Rows[i].Visible = false;
                 for (int j = 0; j < dataGridViewInMatrix_DSN.ColumnCount; j++)
                 {
                     var cellValue = dataGridViewInMatrix_DSN.Rows[i].Cells[j].Value?.ToString()?.ToLower();
                     if (cellValue != null && cellValue == filterValue)
-                        {
-                            rowVisible = true;
-                            break;
-                        }
+                    {
+                        dataGridViewInMatrix_DSN.Rows[i].Visible = true;
+                        break;
+                    }
                 }
-                dataGridViewInMatrix_DSN.Rows[i].Visible = rowVisible;
+                for (int c = 0; c < columns; c++)
+                {
+                    dataGridViewInMatrix_DSN.Rows[matrix.GetLength(0) - 1].Cells[c].Value = "";
+                }
             }
         }
 
@@ -148,6 +150,220 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
                         }
                     }
                 }
+            }
+        }
+
+        private void солбецВозрастToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string[,] mx = ds.GetMatrix(path);
+            string[,] mxsort = ds.SortVozr(mx, 4);
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    dataGridViewInMatrix_DSN.Rows[i].Cells[j].Value = mxsort[i, j];
+                }
+            }
+        }
+
+        private void столбецКабинетВрачаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string[,] mx = ds.GetMatrix(path);
+            string[,] mxsort = ds.SortVozr(mx, 8);
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    dataGridViewInMatrix_DSN.Rows[i].Cells[j].Value = mxsort[i, j];
+                }
+            }
+        }
+
+        private void столбецСрокЛеченияToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string[,] mx = ds.GetMatrix(path);
+            string[,] mxsort = ds.SortVozr(mx, 13);
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    dataGridViewInMatrix_DSN.Rows[i].Cells[j].Value = mxsort[i, j];
+                }
+            }
+        }
+
+        private void солбецВозрастToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            string[,] mx = ds.GetMatrix(path);
+            string[,] mxsort = ds.SortYb(mx, 4);
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                   dataGridViewInMatrix_DSN.Rows[i].Cells[j].Value = mxsort[i, j];
+                }
+            }
+        }
+
+        private void столбецКабинетВрачаToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            string[,] mx = ds.GetMatrix(path);
+            string[,] mxsort = ds.SortYb(mx, 8);
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    dataGridViewInMatrix_DSN.Rows[i].Cells[j].Value = mxsort[i, j];
+                }
+            }
+        }
+
+        private void столбецСрокЛеченияToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            string[,] mx = ds.GetMatrix(path);
+            string[,] mxsort = ds.SortYb(mx, 13);
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    dataGridViewInMatrix_DSN.Rows[i].Cells[j].Value = mxsort[i, j];
+                }
+            }
+        }
+
+        private void buttonBackMatrix_DSN_Click(object sender, EventArgs e)
+        {
+            for (int r = 0; r < rows; r++)
+            {
+                dataGridViewInMatrix_DSN.Rows[r].Visible = true;
+            }
+            dataGridViewInMatrix_DSN.Rows.Clear();
+            matrix = ds.GetMatrix(path);
+            rows = matrix.GetLength(0);
+            columns = matrix.GetLength(1);
+            dataGridViewInMatrix_DSN.RowCount = rows + 1;
+            dataGridViewInMatrix_DSN.ColumnCount = columns;
+
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    dataGridViewInMatrix_DSN.Rows[i].Cells[j].Value = matrix[i, j];
+                    dataGridViewInMatrix_DSN.Rows[i].Cells[j].Selected = false;
+                }
+            }
+        }
+
+        private void buttonDone_DSN_Click(object sender, EventArgs e)
+        {
+            int ageColumn = 4;
+            int srokColumn = 13;
+            int maxValue = int.MinValue;
+            if (comboBoxMax_DSN.SelectedItem.ToString() == "Возраст")
+            {
+                foreach (DataGridViewRow row in dataGridViewInMatrix_DSN.Rows)
+                {
+                    if (row.Cells[ageColumn].Value != null)
+                    {
+                        if (int.TryParse(row.Cells[ageColumn].Value.ToString(), out int cellValue))
+                        {
+                            maxValue = Math.Max(maxValue, cellValue);
+                        }
+                    }
+                }
+            }
+            else if (comboBoxMax_DSN.SelectedItem.ToString() == "Срок лечения(дни)")
+            {
+                foreach (DataGridViewRow row in dataGridViewInMatrix_DSN.Rows)
+                {
+                    if (row.Cells[srokColumn].Value != null)
+                    {
+                        if (int.TryParse(row.Cells[srokColumn].Value.ToString(), out int cellValue))
+                        {
+                            maxValue = Math.Max(maxValue, cellValue);
+                        }
+                    }
+                }
+            }
+            textBoxMax_DSN.Text = maxValue.ToString();
+
+
+        }
+
+        private void buttonMin_DSN_Click(object sender, EventArgs e)
+        {
+            int ageColumn = 4;
+            int srocColumn = 13;
+            int minValue = int.MaxValue;
+            if (comboBoxMin_DSN.SelectedItem.ToString() == "Возраст")
+            {
+                foreach (DataGridViewRow row in dataGridViewInMatrix_DSN.Rows)
+                {
+                    if (row.Cells[ageColumn].Value != null)
+                    {
+                        if (int.TryParse(row.Cells[ageColumn].Value.ToString(), out int cellValue))
+                        {
+                            minValue = Math.Min(minValue, cellValue);
+                        }
+                    }
+                }
+            }
+            else if (comboBoxMin_DSN.SelectedItem.ToString() == "Срок лечения(дни)")
+            {
+                foreach (DataGridViewRow row in dataGridViewInMatrix_DSN.Rows)
+                {
+                    if (row.Cells[srocColumn].Value != null)
+                    {
+                        if (int.TryParse(row.Cells[srocColumn].Value.ToString(), out int cellValue))
+                        {
+                            minValue = Math.Min(minValue, cellValue);
+                        }
+                    }
+                }
+            }
+             textBoxMin_DSN.Text = minValue.ToString();
+        }
+
+        private void buttonSrZnach_DSN_Click(object sender, EventArgs e)
+        {
+            int ageColumn = 4;
+            int srokColumn = 13;
+            int sum = 0;
+            int count = 0;
+
+            if (comboBoxSr_DSN.SelectedItem?.ToString() == "Возраст")
+            {
+                foreach (DataGridViewRow row in dataGridViewInMatrix_DSN.Rows)
+                {
+                    if (row.Cells[ageColumn].Value != null)
+                    {
+                        if (int.TryParse(row.Cells[ageColumn].Value.ToString(), out int cellValue))
+                        {
+                            sum += cellValue;
+                            count++;
+                        }
+                    }
+                }
+            }
+            else if (comboBoxSr_DSN.SelectedItem?.ToString() == "Срок лечения(дни)")
+            {
+                foreach (DataGridViewRow row in dataGridViewInMatrix_DSN.Rows)
+                {
+                    if (row.Cells[srokColumn].Value != null)
+                    {
+                        if (int.TryParse(row.Cells[srokColumn].Value.ToString(), out int cellValue))
+                        {
+                            sum += cellValue;
+                            count++;
+                        }
+                    }
+                }
+            }
+            if (count > 0)
+            {
+                double sr = Math.Round((double)sum / count,3);
+                textBoxSr_DSN.Text = sr.ToString();
             }
         }
     }

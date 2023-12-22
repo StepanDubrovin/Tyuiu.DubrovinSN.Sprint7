@@ -163,6 +163,9 @@
   <data name="direct-download" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\direct-download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="free-icon-search-4194705" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\free-icon-search-4194705.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fyl26wep3gY" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fyl26wep3gY.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -172,7 +175,7 @@
   <data name="free-icon-line-chart-126425" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\free-icon-line-chart-126425.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="free-icon-search-4194705" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\free-icon-search-4194705.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="free-icon-turn-back-4012671" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\free-icon-turn-back-4012671.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

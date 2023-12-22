@@ -243,6 +243,16 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap free_icon_turn_back_4012671 {
+            get {
+                object obj = ResourceManager.GetObject("free-icon-turn-back-4012671", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fyl26wep3gY {
             get {
                 object obj = ResourceManager.GetObject("fyl26wep3gY", resourceCulture);

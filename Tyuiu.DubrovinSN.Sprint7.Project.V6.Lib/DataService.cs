@@ -11,28 +11,28 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6.Lib
     {
         public string[,] GetMatrix(string path)
         {
-            string[] num = File.ReadAllLines(path, Encoding.GetEncoding(1251));
-            int columns = num[0].Split(';').Length;
-            int rows = num.Length;
+            string[] str = File.ReadAllLines(path, Encoding.GetEncoding(1251));
+            int columns = str[0].Split(';').Length;
+            int rows = str.Length;
             string[,] matrix = new string[rows, columns];
-            for (int i = 0; i < num.Length; i++)
+            for (int i = 0; i < str.Length; i++)
             {
-                string numIndex = num[i];
+                string numIndex = str[i];
                 string[] numArray = numIndex.Split(';');
                 for (int j = 0; j < numArray.Length; j++) matrix[i, j] = numArray[j];
             }
             return matrix;
         }
-        public string[,] SortMax(string[,] matrix, int NumberColumn)
+        public string[,] SortYb(string[,] matrix, int NumberColumn)
         {
-            int[] Entrance = new int[matrix.GetLength(0) - 1];
-            Entrance[Entrance.Length - 1] = Convert.ToInt32(matrix[matrix.GetLength(0) - 1, NumberColumn]);
-            for (int i = 0; i < Entrance.Length - 1; i++)
+            int[] arr = new int[matrix.GetLength(0) - 1];
+            arr[arr.Length - 1] = Convert.ToInt32(matrix[matrix.GetLength(0) - 1, NumberColumn]);
+            for (int i = 0; i < arr.Length - 1; i++)
             {
-                Entrance[i] = Convert.ToInt32(matrix[i + 1, NumberColumn]);
+                arr[i] = Convert.ToInt32(matrix[i + 1, NumberColumn]);
             }
 
-            Array.Sort(Entrance, (x, y) => y.CompareTo(x));
+            Array.Sort(arr, (x, y) => y.CompareTo(x));
 
             string[,] SortMatrix = new string[matrix.GetLength(0), matrix.GetLength(1)];
 
@@ -45,7 +45,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6.Lib
             {
                 for (int j = 1; j < matrix.GetLength(0); j++)
                 {
-                    if (Entrance[i] == Convert.ToInt32(matrix[j, NumberColumn]))
+                    if (arr[i] == Convert.ToInt32(matrix[j, NumberColumn]))
                     {
                         for (int c = 0; c < SortMatrix.GetLength(1); c++)
                         {
@@ -62,14 +62,14 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6.Lib
 
         public string[,] SortVozr(string[,] matrix, int NumberColumn)
         {
-            int[] input = new int[matrix.GetLength(0) - 1];
-            input[input.Length - 1] = Convert.ToInt32(matrix[matrix.GetLength(0) - 1, NumberColumn]);
-            for (int i = 0; i < input.Length - 1; i++)
+            int[] vozr = new int[matrix.GetLength(0) - 1];
+            vozr[vozr.Length - 1] = Convert.ToInt32(matrix[matrix.GetLength(0) - 1, NumberColumn]);
+            for (int i = 0; i < vozr.Length - 1; i++)
             {
-                input[i] = Convert.ToInt32(matrix[i + 1, NumberColumn]);
+                vozr[i] = Convert.ToInt32(matrix[i + 1, NumberColumn]);
             }
 
-            Array.Sort(input, (x, y) => x.CompareTo(y));
+            Array.Sort(vozr, (x, y) => x.CompareTo(y));
 
             string[,] sortedmx = new string[matrix.GetLength(0), matrix.GetLength(1)];
 
@@ -82,7 +82,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6.Lib
             {
                 for (int j = 1; j < matrix.GetLength(0); j++)
                 {
-                    if (input[i] == Convert.ToInt32(matrix[j, NumberColumn]))
+                    if (vozr[i] == Convert.ToInt32(matrix[j, NumberColumn]))
                     {
                         for (int c = 0; c < sortedmx.GetLength(1); c++)
                         {

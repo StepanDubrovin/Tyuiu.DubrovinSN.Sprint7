@@ -31,15 +31,18 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         {
             this.components = new System.ComponentModel.Container();
             this.panelUp_DSN = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBoxViltr_DSN = new System.Windows.Forms.GroupBox();
             this.buttonViltr_DSN = new System.Windows.Forms.Button();
             this.labelVibor_DSN = new System.Windows.Forms.Label();
             this.textBoxVibor_DSN = new System.Windows.Forms.TextBox();
             this.groupBoxSearch_DSN = new System.Windows.Forms.GroupBox();
+            this.buttonSerch_DSN = new System.Windows.Forms.Button();
             this.textBoxReserch_DSN = new System.Windows.Forms.TextBox();
             this.label_Ser_DSN = new System.Windows.Forms.Label();
             this.panelLeft_DSN = new System.Windows.Forms.Panel();
             this.groupBoxButtons_DSN = new System.Windows.Forms.GroupBox();
+            this.buttonBackMatrix_DSN = new System.Windows.Forms.Button();
             this.buttonDelete_DSN = new System.Windows.Forms.Button();
             this.buttonFunction_DSN = new System.Windows.Forms.Button();
             this.buttonSaveFile_DSN = new System.Windows.Forms.Button();
@@ -47,20 +50,32 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.panelFuncIn_DSN = new System.Windows.Forms.Panel();
             this.groupBox_Input_DSN = new System.Windows.Forms.GroupBox();
             this.dataGridViewInMatrix_DSN = new System.Windows.Forms.DataGridView();
-            this.menuStripSort_DSN = new System.Windows.Forms.MenuStrip();
-            this.xToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.столбецФамилияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.столбецИмяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.столбецОтчесвтоToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.поВозрастаниюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.столбецВозрастToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.столбецВремяЛеченияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.столбецКабинетДоктораToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.столбецКабинетВрачаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.столбецСрокЛеченияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.поУбываниюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.солбецВозрастToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.столбецКабинетВрачаToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.столбецСрокЛеченияToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
-            this.buttonSerch_DSN = new System.Windows.Forms.Button();
+            this.comboBoxMax_DSN = new System.Windows.Forms.ComboBox();
+            this.comboBoxMin_DSN = new System.Windows.Forms.ComboBox();
+            this.comboBoxSr_DSN = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBoxMax_DSN = new System.Windows.Forms.TextBox();
+            this.buttonDone_DSN = new System.Windows.Forms.Button();
+            this.textBoxMin_DSN = new System.Windows.Forms.TextBox();
+            this.buttonSrZnach_DSN = new System.Windows.Forms.Button();
+            this.textBoxSr_DSN = new System.Windows.Forms.TextBox();
+            this.buttonMin_DSN = new System.Windows.Forms.Button();
             this.panelUp_DSN.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.groupBoxViltr_DSN.SuspendLayout();
             this.groupBoxSearch_DSN.SuspendLayout();
             this.panelLeft_DSN.SuspendLayout();
@@ -68,12 +83,13 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.panelFuncIn_DSN.SuspendLayout();
             this.groupBox_Input_DSN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInMatrix_DSN)).BeginInit();
-            this.menuStripSort_DSN.SuspendLayout();
+            this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelUp_DSN
             // 
             this.panelUp_DSN.BackColor = System.Drawing.SystemColors.Control;
+            this.panelUp_DSN.Controls.Add(this.groupBox1);
             this.panelUp_DSN.Controls.Add(this.groupBoxViltr_DSN);
             this.panelUp_DSN.Controls.Add(this.groupBoxSearch_DSN);
             this.panelUp_DSN.Dock = System.Windows.Forms.DockStyle.Top;
@@ -81,6 +97,27 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.panelUp_DSN.Name = "panelUp_DSN";
             this.panelUp_DSN.Size = new System.Drawing.Size(1379, 153);
             this.panelUp_DSN.TabIndex = 0;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.buttonMin_DSN);
+            this.groupBox1.Controls.Add(this.textBoxSr_DSN);
+            this.groupBox1.Controls.Add(this.buttonSrZnach_DSN);
+            this.groupBox1.Controls.Add(this.textBoxMin_DSN);
+            this.groupBox1.Controls.Add(this.buttonDone_DSN);
+            this.groupBox1.Controls.Add(this.textBoxMax_DSN);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.comboBoxSr_DSN);
+            this.groupBox1.Controls.Add(this.comboBoxMin_DSN);
+            this.groupBox1.Controls.Add(this.comboBoxMax_DSN);
+            this.groupBox1.Location = new System.Drawing.Point(647, 13);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(584, 135);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Элменты статистики";
             // 
             // groupBoxViltr_DSN
             // 
@@ -96,6 +133,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // 
             // buttonViltr_DSN
             // 
+            this.buttonViltr_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonViltr_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_filtering_6303429;
             this.buttonViltr_DSN.Location = new System.Drawing.Point(234, 68);
             this.buttonViltr_DSN.Name = "buttonViltr_DSN";
@@ -133,6 +171,17 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.groupBoxSearch_DSN.TabStop = false;
             this.groupBoxSearch_DSN.Text = "Поиск";
             // 
+            // buttonSerch_DSN
+            // 
+            this.buttonSerch_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSerch_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_search_4194705;
+            this.buttonSerch_DSN.Location = new System.Drawing.Point(234, 68);
+            this.buttonSerch_DSN.Name = "buttonSerch_DSN";
+            this.buttonSerch_DSN.Size = new System.Drawing.Size(72, 61);
+            this.buttonSerch_DSN.TabIndex = 3;
+            this.buttonSerch_DSN.UseVisualStyleBackColor = true;
+            this.buttonSerch_DSN.Click += new System.EventHandler(this.buttonSerch_DSN_Click);
+            // 
             // textBoxReserch_DSN
             // 
             this.textBoxReserch_DSN.Location = new System.Drawing.Point(9, 61);
@@ -160,6 +209,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // 
             // groupBoxButtons_DSN
             // 
+            this.groupBoxButtons_DSN.Controls.Add(this.buttonBackMatrix_DSN);
             this.groupBoxButtons_DSN.Controls.Add(this.buttonDelete_DSN);
             this.groupBoxButtons_DSN.Controls.Add(this.buttonFunction_DSN);
             this.groupBoxButtons_DSN.Controls.Add(this.buttonSaveFile_DSN);
@@ -172,9 +222,23 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.groupBoxButtons_DSN.TabStop = false;
             this.groupBoxButtons_DSN.Text = "Инструменты";
             // 
+            // buttonBackMatrix_DSN
+            // 
+            this.buttonBackMatrix_DSN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonBackMatrix_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonBackMatrix_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_turn_back_4012671;
+            this.buttonBackMatrix_DSN.Location = new System.Drawing.Point(12, 376);
+            this.buttonBackMatrix_DSN.Name = "buttonBackMatrix_DSN";
+            this.buttonBackMatrix_DSN.Size = new System.Drawing.Size(72, 61);
+            this.buttonBackMatrix_DSN.TabIndex = 4;
+            this.toolTip.SetToolTip(this.buttonBackMatrix_DSN, "Возвращает исходную таблицу");
+            this.buttonBackMatrix_DSN.UseVisualStyleBackColor = true;
+            this.buttonBackMatrix_DSN.Click += new System.EventHandler(this.buttonBackMatrix_DSN_Click);
+            // 
             // buttonDelete_DSN
             // 
             this.buttonDelete_DSN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonDelete_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDelete_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_clear_3602045;
             this.buttonDelete_DSN.Location = new System.Drawing.Point(12, 443);
             this.buttonDelete_DSN.Name = "buttonDelete_DSN";
@@ -186,6 +250,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // 
             // buttonFunction_DSN
             // 
+            this.buttonFunction_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonFunction_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_graph_8780403;
             this.buttonFunction_DSN.Location = new System.Drawing.Point(12, 166);
             this.buttonFunction_DSN.Name = "buttonFunction_DSN";
@@ -197,6 +262,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // 
             // buttonSaveFile_DSN
             // 
+            this.buttonSaveFile_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSaveFile_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_photo_11918718;
             this.buttonSaveFile_DSN.Location = new System.Drawing.Point(12, 99);
             this.buttonSaveFile_DSN.Name = "buttonSaveFile_DSN";
@@ -208,6 +274,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // 
             // buttonOpenFile_DSN
             // 
+            this.buttonOpenFile_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonOpenFile_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_open_folder_8406407;
             this.buttonOpenFile_DSN.Location = new System.Drawing.Point(12, 32);
             this.buttonOpenFile_DSN.Name = "buttonOpenFile_DSN";
@@ -229,7 +296,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // groupBox_Input_DSN
             // 
             this.groupBox_Input_DSN.Controls.Add(this.dataGridViewInMatrix_DSN);
-            this.groupBox_Input_DSN.Controls.Add(this.menuStripSort_DSN);
+            this.groupBox_Input_DSN.Controls.Add(this.menuStrip);
             this.groupBox_Input_DSN.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox_Input_DSN.Location = new System.Drawing.Point(0, 0);
             this.groupBox_Input_DSN.Name = "groupBox_Input_DSN";
@@ -249,90 +316,206 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.dataGridViewInMatrix_DSN.Size = new System.Drawing.Size(1273, 473);
             this.dataGridViewInMatrix_DSN.TabIndex = 0;
             // 
-            // menuStripSort_DSN
+            // menuStrip
             // 
-            this.menuStripSort_DSN.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.xToolStripMenuItem,
-            this.aToolStripMenuItem});
-            this.menuStripSort_DSN.Location = new System.Drawing.Point(3, 16);
-            this.menuStripSort_DSN.Name = "menuStripSort_DSN";
-            this.menuStripSort_DSN.Size = new System.Drawing.Size(1273, 24);
-            this.menuStripSort_DSN.TabIndex = 1;
-            this.menuStripSort_DSN.Text = "menuStrip1";
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.поВозрастаниюToolStripMenuItem,
+            this.поУбываниюToolStripMenuItem});
+            this.menuStrip.Location = new System.Drawing.Point(3, 16);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(1273, 24);
+            this.menuStrip.TabIndex = 1;
+            this.menuStrip.Text = "menuStrip1";
             // 
-            // xToolStripMenuItem
+            // поВозрастаниюToolStripMenuItem
             // 
-            this.xToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.столбецФамилияToolStripMenuItem,
-            this.столбецИмяToolStripMenuItem,
-            this.столбецОтчесвтоToolStripMenuItem});
-            this.xToolStripMenuItem.Name = "xToolStripMenuItem";
-            this.xToolStripMenuItem.Size = new System.Drawing.Size(110, 20);
-            this.xToolStripMenuItem.Text = "По возрастанию";
-            // 
-            // столбецФамилияToolStripMenuItem
-            // 
-            this.столбецФамилияToolStripMenuItem.Name = "столбецФамилияToolStripMenuItem";
-            this.столбецФамилияToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
-            this.столбецФамилияToolStripMenuItem.Text = "Столбец \"Возраст\"";
-            // 
-            // столбецИмяToolStripMenuItem
-            // 
-            this.столбецИмяToolStripMenuItem.Name = "столбецИмяToolStripMenuItem";
-            this.столбецИмяToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
-            this.столбецИмяToolStripMenuItem.Text = "Столбец \"Время лечения\"";
-            // 
-            // столбецОтчесвтоToolStripMenuItem
-            // 
-            this.столбецОтчесвтоToolStripMenuItem.Name = "столбецОтчесвтоToolStripMenuItem";
-            this.столбецОтчесвтоToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
-            this.столбецОтчесвтоToolStripMenuItem.Text = "Столбец \"Кабинет доктора\"";
-            // 
-            // aToolStripMenuItem
-            // 
-            this.aToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.поВозрастаниюToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.поВозрастаниюToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.столбецВозрастToolStripMenuItem,
-            this.столбецВремяЛеченияToolStripMenuItem,
-            this.столбецКабинетДоктораToolStripMenuItem});
-            this.aToolStripMenuItem.Name = "aToolStripMenuItem";
-            this.aToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
-            this.aToolStripMenuItem.Text = "По убыванию";
+            this.столбецКабинетВрачаToolStripMenuItem,
+            this.столбецСрокЛеченияToolStripMenuItem});
+            this.поВозрастаниюToolStripMenuItem.Name = "поВозрастаниюToolStripMenuItem";
+            this.поВозрастаниюToolStripMenuItem.Size = new System.Drawing.Size(110, 20);
+            this.поВозрастаниюToolStripMenuItem.Text = "По возрастанию";
             // 
             // столбецВозрастToolStripMenuItem
             // 
             this.столбецВозрастToolStripMenuItem.Name = "столбецВозрастToolStripMenuItem";
-            this.столбецВозрастToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
+            this.столбецВозрастToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.столбецВозрастToolStripMenuItem.Text = "Столбец \"Возраст\"";
+            this.столбецВозрастToolStripMenuItem.Click += new System.EventHandler(this.солбецВозрастToolStripMenuItem_Click);
             // 
-            // столбецВремяЛеченияToolStripMenuItem
+            // столбецКабинетВрачаToolStripMenuItem
             // 
-            this.столбецВремяЛеченияToolStripMenuItem.Name = "столбецВремяЛеченияToolStripMenuItem";
-            this.столбецВремяЛеченияToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
-            this.столбецВремяЛеченияToolStripMenuItem.Text = "Столбец \"Время лечения\"";
+            this.столбецКабинетВрачаToolStripMenuItem.Name = "столбецКабинетВрачаToolStripMenuItem";
+            this.столбецКабинетВрачаToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.столбецКабинетВрачаToolStripMenuItem.Text = "Столбец \"Кабинет врача\"";
+            this.столбецКабинетВрачаToolStripMenuItem.Click += new System.EventHandler(this.столбецКабинетВрачаToolStripMenuItem_Click);
             // 
-            // столбецКабинетДоктораToolStripMenuItem
+            // столбецСрокЛеченияToolStripMenuItem
             // 
-            this.столбецКабинетДоктораToolStripMenuItem.Name = "столбецКабинетДоктораToolStripMenuItem";
-            this.столбецКабинетДоктораToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
-            this.столбецКабинетДоктораToolStripMenuItem.Text = "Столбец \"Кабинет доктора\"";
+            this.столбецСрокЛеченияToolStripMenuItem.Name = "столбецСрокЛеченияToolStripMenuItem";
+            this.столбецСрокЛеченияToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.столбецСрокЛеченияToolStripMenuItem.Text = "Столбец \"Срок лечения\"";
+            this.столбецСрокЛеченияToolStripMenuItem.Click += new System.EventHandler(this.столбецСрокЛеченияToolStripMenuItem_Click);
+            // 
+            // поУбываниюToolStripMenuItem
+            // 
+            this.поУбываниюToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.поУбываниюToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.солбецВозрастToolStripMenuItem1,
+            this.столбецКабинетВрачаToolStripMenuItem1,
+            this.столбецСрокЛеченияToolStripMenuItem1});
+            this.поУбываниюToolStripMenuItem.Name = "поУбываниюToolStripMenuItem";
+            this.поУбываниюToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
+            this.поУбываниюToolStripMenuItem.Text = "По убыванию";
+            // 
+            // солбецВозрастToolStripMenuItem1
+            // 
+            this.солбецВозрастToolStripMenuItem1.Name = "солбецВозрастToolStripMenuItem1";
+            this.солбецВозрастToolStripMenuItem1.Size = new System.Drawing.Size(214, 22);
+            this.солбецВозрастToolStripMenuItem1.Text = "Солбец \"Возраст\"";
+            this.солбецВозрастToolStripMenuItem1.Click += new System.EventHandler(this.солбецВозрастToolStripMenuItem1_Click);
+            // 
+            // столбецКабинетВрачаToolStripMenuItem1
+            // 
+            this.столбецКабинетВрачаToolStripMenuItem1.Name = "столбецКабинетВрачаToolStripMenuItem1";
+            this.столбецКабинетВрачаToolStripMenuItem1.Size = new System.Drawing.Size(214, 22);
+            this.столбецКабинетВрачаToolStripMenuItem1.Text = "Столбец \"Кабинет врача\"";
+            this.столбецКабинетВрачаToolStripMenuItem1.Click += new System.EventHandler(this.столбецКабинетВрачаToolStripMenuItem1_Click);
+            // 
+            // столбецСрокЛеченияToolStripMenuItem1
+            // 
+            this.столбецСрокЛеченияToolStripMenuItem1.Name = "столбецСрокЛеченияToolStripMenuItem1";
+            this.столбецСрокЛеченияToolStripMenuItem1.Size = new System.Drawing.Size(214, 22);
+            this.столбецСрокЛеченияToolStripMenuItem1.Text = "Столбец \"Срок лечения\"";
+            this.столбецСрокЛеченияToolStripMenuItem1.Click += new System.EventHandler(this.столбецСрокЛеченияToolStripMenuItem1_Click);
             // 
             // toolTip
             // 
             this.toolTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip.ToolTipTitle = "Подсказка";
             // 
             // openFileDialog
             // 
             this.openFileDialog.FileName = "openFileDialog1";
             // 
-            // buttonSerch_DSN
+            // comboBoxMax_DSN
             // 
-            this.buttonSerch_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_search_4194705;
-            this.buttonSerch_DSN.Location = new System.Drawing.Point(234, 68);
-            this.buttonSerch_DSN.Name = "buttonSerch_DSN";
-            this.buttonSerch_DSN.Size = new System.Drawing.Size(72, 61);
-            this.buttonSerch_DSN.TabIndex = 3;
-            this.buttonSerch_DSN.UseVisualStyleBackColor = true;
-            this.buttonSerch_DSN.Click += new System.EventHandler(this.buttonSerch_DSN_Click);
+            this.comboBoxMax_DSN.FormattingEnabled = true;
+            this.comboBoxMax_DSN.Items.AddRange(new object[] {
+            "Возраст",
+            "Срок лечения(дни)"});
+            this.comboBoxMax_DSN.Location = new System.Drawing.Point(6, 46);
+            this.comboBoxMax_DSN.Name = "comboBoxMax_DSN";
+            this.comboBoxMax_DSN.Size = new System.Drawing.Size(141, 21);
+            this.comboBoxMax_DSN.TabIndex = 0;
+            // 
+            // comboBoxMin_DSN
+            // 
+            this.comboBoxMin_DSN.FormattingEnabled = true;
+            this.comboBoxMin_DSN.Items.AddRange(new object[] {
+            "Возраст",
+            "Срок лечения(дни)"});
+            this.comboBoxMin_DSN.Location = new System.Drawing.Point(435, 46);
+            this.comboBoxMin_DSN.Name = "comboBoxMin_DSN";
+            this.comboBoxMin_DSN.Size = new System.Drawing.Size(141, 21);
+            this.comboBoxMin_DSN.TabIndex = 1;
+            // 
+            // comboBoxSr_DSN
+            // 
+            this.comboBoxSr_DSN.FormattingEnabled = true;
+            this.comboBoxSr_DSN.Items.AddRange(new object[] {
+            "Возраст",
+            "Срок лечения(дни)"});
+            this.comboBoxSr_DSN.Location = new System.Drawing.Point(225, 46);
+            this.comboBoxSr_DSN.Name = "comboBoxSr_DSN";
+            this.comboBoxSr_DSN.Size = new System.Drawing.Size(141, 21);
+            this.comboBoxSr_DSN.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Максимальное значение";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(432, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(128, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Минимальное значение";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(222, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Среднее значение";
+            // 
+            // textBoxMax_DSN
+            // 
+            this.textBoxMax_DSN.Location = new System.Drawing.Point(6, 102);
+            this.textBoxMax_DSN.Name = "textBoxMax_DSN";
+            this.textBoxMax_DSN.Size = new System.Drawing.Size(75, 20);
+            this.textBoxMax_DSN.TabIndex = 6;
+            // 
+            // buttonDone_DSN
+            // 
+            this.buttonDone_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDone_DSN.Location = new System.Drawing.Point(6, 73);
+            this.buttonDone_DSN.Name = "buttonDone_DSN";
+            this.buttonDone_DSN.Size = new System.Drawing.Size(75, 23);
+            this.buttonDone_DSN.TabIndex = 7;
+            this.buttonDone_DSN.Text = "Выполнить";
+            this.toolTip.SetToolTip(this.buttonDone_DSN, "Выводит максимальное значение");
+            this.buttonDone_DSN.UseVisualStyleBackColor = true;
+            this.buttonDone_DSN.Click += new System.EventHandler(this.buttonDone_DSN_Click);
+            // 
+            // textBoxMin_DSN
+            // 
+            this.textBoxMin_DSN.Location = new System.Drawing.Point(435, 102);
+            this.textBoxMin_DSN.Name = "textBoxMin_DSN";
+            this.textBoxMin_DSN.Size = new System.Drawing.Size(75, 20);
+            this.textBoxMin_DSN.TabIndex = 8;
+            // 
+            // buttonSrZnach_DSN
+            // 
+            this.buttonSrZnach_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSrZnach_DSN.Location = new System.Drawing.Point(225, 76);
+            this.buttonSrZnach_DSN.Name = "buttonSrZnach_DSN";
+            this.buttonSrZnach_DSN.Size = new System.Drawing.Size(75, 23);
+            this.buttonSrZnach_DSN.TabIndex = 9;
+            this.buttonSrZnach_DSN.Text = "Выполнить";
+            this.toolTip.SetToolTip(this.buttonSrZnach_DSN, "Выводит минимальное значение");
+            this.buttonSrZnach_DSN.UseVisualStyleBackColor = true;
+            this.buttonSrZnach_DSN.Click += new System.EventHandler(this.buttonSrZnach_DSN_Click);
+            // 
+            // textBoxSr_DSN
+            // 
+            this.textBoxSr_DSN.Location = new System.Drawing.Point(225, 105);
+            this.textBoxSr_DSN.Name = "textBoxSr_DSN";
+            this.textBoxSr_DSN.Size = new System.Drawing.Size(75, 20);
+            this.textBoxSr_DSN.TabIndex = 10;
+            // 
+            // buttonMin_DSN
+            // 
+            this.buttonMin_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonMin_DSN.Location = new System.Drawing.Point(435, 73);
+            this.buttonMin_DSN.Name = "buttonMin_DSN";
+            this.buttonMin_DSN.Size = new System.Drawing.Size(75, 23);
+            this.buttonMin_DSN.TabIndex = 11;
+            this.buttonMin_DSN.Text = "Выполнить";
+            this.toolTip.SetToolTip(this.buttonMin_DSN, "Вычисляет среднее значение");
+            this.buttonMin_DSN.UseVisualStyleBackColor = true;
+            this.buttonMin_DSN.Click += new System.EventHandler(this.buttonMin_DSN_Click);
             // 
             // FormPacient
             // 
@@ -342,11 +525,12 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.Controls.Add(this.panelFuncIn_DSN);
             this.Controls.Add(this.panelLeft_DSN);
             this.Controls.Add(this.panelUp_DSN);
-            this.MainMenuStrip = this.menuStripSort_DSN;
             this.Name = "FormPacient";
             this.Text = "Пациенты";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelUp_DSN.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBoxViltr_DSN.ResumeLayout(false);
             this.groupBoxViltr_DSN.PerformLayout();
             this.groupBoxSearch_DSN.ResumeLayout(false);
@@ -357,8 +541,8 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.groupBox_Input_DSN.ResumeLayout(false);
             this.groupBox_Input_DSN.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInMatrix_DSN)).EndInit();
-            this.menuStripSort_DSN.ResumeLayout(false);
-            this.menuStripSort_DSN.PerformLayout();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -384,16 +568,30 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         private System.Windows.Forms.Label labelVibor_DSN;
         private System.Windows.Forms.TextBox textBoxVibor_DSN;
         private System.Windows.Forms.Button buttonViltr_DSN;
-        private System.Windows.Forms.MenuStrip menuStripSort_DSN;
-        private System.Windows.Forms.ToolStripMenuItem xToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem столбецФамилияToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem столбецИмяToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem столбецОтчесвтоToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem столбецВозрастToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem столбецВремяЛеченияToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem столбецКабинетДоктораToolStripMenuItem;
         private System.Windows.Forms.TextBox textBoxReserch_DSN;
         private System.Windows.Forms.Button buttonSerch_DSN;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.MenuStrip menuStrip;
+        private System.Windows.Forms.ToolStripMenuItem поВозрастаниюToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem столбецВозрастToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem столбецКабинетВрачаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem столбецСрокЛеченияToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem поУбываниюToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem солбецВозрастToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem столбецКабинетВрачаToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem столбецСрокЛеченияToolStripMenuItem1;
+        private System.Windows.Forms.Button buttonBackMatrix_DSN;
+        private System.Windows.Forms.TextBox textBoxMax_DSN;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBoxSr_DSN;
+        private System.Windows.Forms.ComboBox comboBoxMin_DSN;
+        private System.Windows.Forms.ComboBox comboBoxMax_DSN;
+        private System.Windows.Forms.Button buttonDone_DSN;
+        private System.Windows.Forms.TextBox textBoxMin_DSN;
+        private System.Windows.Forms.Button buttonMin_DSN;
+        private System.Windows.Forms.TextBox textBoxSr_DSN;
+        private System.Windows.Forms.Button buttonSrZnach_DSN;
     }
 }

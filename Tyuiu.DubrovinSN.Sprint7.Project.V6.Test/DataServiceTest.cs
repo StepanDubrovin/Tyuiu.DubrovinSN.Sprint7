@@ -11,7 +11,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6.Test
         [TestMethod]
         public void CheckFile()
         {
-            string path = @"C:\Sprint7\Pacients.csv";
+            string path = @"C:\C#\Tyuiu.DubrovinSN.Sprint7\Tyuiu.DubrovinSN.Sprint7.Project.V6\bin\Debug\Информация о пациентах";
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             Assert.AreEqual(true, fileExists);
