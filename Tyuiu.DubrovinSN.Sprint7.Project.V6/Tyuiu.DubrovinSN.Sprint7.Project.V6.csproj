@@ -183,5 +183,11 @@
   <ItemGroup>
     <None Include="Resources\free-icon-turn-back-4012671.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-graph-3905407.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-save-2550350.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

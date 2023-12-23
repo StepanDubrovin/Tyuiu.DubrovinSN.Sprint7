@@ -121,6 +121,9 @@
   <data name="free-icon-patient-4465493 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\free-icon-patient-4465493 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="free-icon-graph-3905407" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\free-icon-graph-3905407.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="free-icon-doctor-patient-6401436" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\free-icon-doctor-patient-6401436.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,6 +142,9 @@
   <data name="free-icon-open-file-4847498" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\free-icon-open-file-4847498.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="free-icon-patient-4465493 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\free-icon-patient-4465493 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="free-icon-patient-4465493" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\free-icon-patient-4465493.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -154,8 +160,8 @@
   <data name="free-icon-id-card-9386768" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\free-icon-id-card-9386768.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="free-icon-patient-4465493 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\free-icon-patient-4465493 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="free-icon-turn-back-4012671" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\free-icon-turn-back-4012671.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="free-icon-info-943579" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\free-icon-info-943579.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,7 +181,7 @@
   <data name="free-icon-line-chart-126425" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\free-icon-line-chart-126425.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="free-icon-turn-back-4012671" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\free-icon-turn-back-4012671.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="free-icon-save-2550350" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\free-icon-save-2550350.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

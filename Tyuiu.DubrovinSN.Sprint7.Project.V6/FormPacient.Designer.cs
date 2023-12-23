@@ -29,9 +29,20 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.panelUp_DSN = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonMin_DSN = new System.Windows.Forms.Button();
+            this.textBoxSr_DSN = new System.Windows.Forms.TextBox();
+            this.buttonSrZnach_DSN = new System.Windows.Forms.Button();
+            this.textBoxMin_DSN = new System.Windows.Forms.TextBox();
+            this.buttonDone_DSN = new System.Windows.Forms.Button();
+            this.textBoxMax_DSN = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBoxSr_DSN = new System.Windows.Forms.ComboBox();
+            this.comboBoxMin_DSN = new System.Windows.Forms.ComboBox();
+            this.comboBoxMax_DSN = new System.Windows.Forms.ComboBox();
             this.groupBoxViltr_DSN = new System.Windows.Forms.GroupBox();
             this.buttonViltr_DSN = new System.Windows.Forms.Button();
             this.labelVibor_DSN = new System.Windows.Forms.Label();
@@ -59,21 +70,9 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.солбецВозрастToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.столбецКабинетВрачаToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.столбецСрокЛеченияToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip = new System.Windows.Forms.ToolTip();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
-            this.comboBoxMax_DSN = new System.Windows.Forms.ComboBox();
-            this.comboBoxMin_DSN = new System.Windows.Forms.ComboBox();
-            this.comboBoxSr_DSN = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBoxMax_DSN = new System.Windows.Forms.TextBox();
-            this.buttonDone_DSN = new System.Windows.Forms.Button();
-            this.textBoxMin_DSN = new System.Windows.Forms.TextBox();
-            this.buttonSrZnach_DSN = new System.Windows.Forms.Button();
-            this.textBoxSr_DSN = new System.Windows.Forms.TextBox();
-            this.buttonMin_DSN = new System.Windows.Forms.Button();
             this.panelUp_DSN.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBoxViltr_DSN.SuspendLayout();
@@ -118,6 +117,123 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Элменты статистики";
+            // 
+            // buttonMin_DSN
+            // 
+            this.buttonMin_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonMin_DSN.Location = new System.Drawing.Point(435, 76);
+            this.buttonMin_DSN.Name = "buttonMin_DSN";
+            this.buttonMin_DSN.Size = new System.Drawing.Size(75, 23);
+            this.buttonMin_DSN.TabIndex = 11;
+            this.buttonMin_DSN.Text = "Выполнить";
+            this.toolTip.SetToolTip(this.buttonMin_DSN, "Вычисляет среднее значение");
+            this.buttonMin_DSN.UseVisualStyleBackColor = true;
+            this.buttonMin_DSN.Click += new System.EventHandler(this.buttonMin_DSN_Click);
+            // 
+            // textBoxSr_DSN
+            // 
+            this.textBoxSr_DSN.Location = new System.Drawing.Point(225, 105);
+            this.textBoxSr_DSN.Name = "textBoxSr_DSN";
+            this.textBoxSr_DSN.Size = new System.Drawing.Size(75, 20);
+            this.textBoxSr_DSN.TabIndex = 10;
+            // 
+            // buttonSrZnach_DSN
+            // 
+            this.buttonSrZnach_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSrZnach_DSN.Location = new System.Drawing.Point(225, 76);
+            this.buttonSrZnach_DSN.Name = "buttonSrZnach_DSN";
+            this.buttonSrZnach_DSN.Size = new System.Drawing.Size(75, 23);
+            this.buttonSrZnach_DSN.TabIndex = 9;
+            this.buttonSrZnach_DSN.Text = "Выполнить";
+            this.toolTip.SetToolTip(this.buttonSrZnach_DSN, "Выводит минимальное значение");
+            this.buttonSrZnach_DSN.UseVisualStyleBackColor = true;
+            this.buttonSrZnach_DSN.Click += new System.EventHandler(this.buttonSrZnach_DSN_Click);
+            // 
+            // textBoxMin_DSN
+            // 
+            this.textBoxMin_DSN.Location = new System.Drawing.Point(435, 105);
+            this.textBoxMin_DSN.Name = "textBoxMin_DSN";
+            this.textBoxMin_DSN.Size = new System.Drawing.Size(75, 20);
+            this.textBoxMin_DSN.TabIndex = 8;
+            // 
+            // buttonDone_DSN
+            // 
+            this.buttonDone_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDone_DSN.Location = new System.Drawing.Point(6, 73);
+            this.buttonDone_DSN.Name = "buttonDone_DSN";
+            this.buttonDone_DSN.Size = new System.Drawing.Size(75, 23);
+            this.buttonDone_DSN.TabIndex = 7;
+            this.buttonDone_DSN.Text = "Выполнить";
+            this.toolTip.SetToolTip(this.buttonDone_DSN, "Выводит максимальное значение");
+            this.buttonDone_DSN.UseVisualStyleBackColor = true;
+            this.buttonDone_DSN.Click += new System.EventHandler(this.buttonDone_DSN_Click);
+            // 
+            // textBoxMax_DSN
+            // 
+            this.textBoxMax_DSN.Location = new System.Drawing.Point(6, 102);
+            this.textBoxMax_DSN.Name = "textBoxMax_DSN";
+            this.textBoxMax_DSN.Size = new System.Drawing.Size(75, 20);
+            this.textBoxMax_DSN.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(222, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Среднее значение";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(432, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(128, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Минимальное значение";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Максимальное значение";
+            // 
+            // comboBoxSr_DSN
+            // 
+            this.comboBoxSr_DSN.FormattingEnabled = true;
+            this.comboBoxSr_DSN.Items.AddRange(new object[] {
+            "Возраст",
+            "Срок лечения(дни)"});
+            this.comboBoxSr_DSN.Location = new System.Drawing.Point(225, 46);
+            this.comboBoxSr_DSN.Name = "comboBoxSr_DSN";
+            this.comboBoxSr_DSN.Size = new System.Drawing.Size(141, 21);
+            this.comboBoxSr_DSN.TabIndex = 2;
+            // 
+            // comboBoxMin_DSN
+            // 
+            this.comboBoxMin_DSN.FormattingEnabled = true;
+            this.comboBoxMin_DSN.Items.AddRange(new object[] {
+            "Возраст",
+            "Срок лечения(дни)"});
+            this.comboBoxMin_DSN.Location = new System.Drawing.Point(435, 46);
+            this.comboBoxMin_DSN.Name = "comboBoxMin_DSN";
+            this.comboBoxMin_DSN.Size = new System.Drawing.Size(141, 21);
+            this.comboBoxMin_DSN.TabIndex = 1;
+            // 
+            // comboBoxMax_DSN
+            // 
+            this.comboBoxMax_DSN.FormattingEnabled = true;
+            this.comboBoxMax_DSN.Items.AddRange(new object[] {
+            "Возраст",
+            "Срок лечения(дни)"});
+            this.comboBoxMax_DSN.Location = new System.Drawing.Point(6, 46);
+            this.comboBoxMax_DSN.Name = "comboBoxMax_DSN";
+            this.comboBoxMax_DSN.Size = new System.Drawing.Size(141, 21);
+            this.comboBoxMax_DSN.TabIndex = 0;
             // 
             // groupBoxViltr_DSN
             // 
@@ -251,12 +367,12 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // buttonFunction_DSN
             // 
             this.buttonFunction_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonFunction_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_graph_8780403;
+            this.buttonFunction_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_graph_3905407;
             this.buttonFunction_DSN.Location = new System.Drawing.Point(12, 166);
             this.buttonFunction_DSN.Name = "buttonFunction_DSN";
             this.buttonFunction_DSN.Size = new System.Drawing.Size(72, 61);
             this.buttonFunction_DSN.TabIndex = 2;
-            this.toolTip.SetToolTip(this.buttonFunction_DSN, "Строит график функции");
+            this.toolTip.SetToolTip(this.buttonFunction_DSN, "Переходит в окно с построением графика ");
             this.buttonFunction_DSN.UseVisualStyleBackColor = true;
             this.buttonFunction_DSN.Click += new System.EventHandler(this.buttonFunction_DSN_Click);
             // 
@@ -399,123 +515,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // openFileDialog
             // 
             this.openFileDialog.FileName = "openFileDialog1";
-            // 
-            // comboBoxMax_DSN
-            // 
-            this.comboBoxMax_DSN.FormattingEnabled = true;
-            this.comboBoxMax_DSN.Items.AddRange(new object[] {
-            "Возраст",
-            "Срок лечения(дни)"});
-            this.comboBoxMax_DSN.Location = new System.Drawing.Point(6, 46);
-            this.comboBoxMax_DSN.Name = "comboBoxMax_DSN";
-            this.comboBoxMax_DSN.Size = new System.Drawing.Size(141, 21);
-            this.comboBoxMax_DSN.TabIndex = 0;
-            // 
-            // comboBoxMin_DSN
-            // 
-            this.comboBoxMin_DSN.FormattingEnabled = true;
-            this.comboBoxMin_DSN.Items.AddRange(new object[] {
-            "Возраст",
-            "Срок лечения(дни)"});
-            this.comboBoxMin_DSN.Location = new System.Drawing.Point(435, 46);
-            this.comboBoxMin_DSN.Name = "comboBoxMin_DSN";
-            this.comboBoxMin_DSN.Size = new System.Drawing.Size(141, 21);
-            this.comboBoxMin_DSN.TabIndex = 1;
-            // 
-            // comboBoxSr_DSN
-            // 
-            this.comboBoxSr_DSN.FormattingEnabled = true;
-            this.comboBoxSr_DSN.Items.AddRange(new object[] {
-            "Возраст",
-            "Срок лечения(дни)"});
-            this.comboBoxSr_DSN.Location = new System.Drawing.Point(225, 46);
-            this.comboBoxSr_DSN.Name = "comboBoxSr_DSN";
-            this.comboBoxSr_DSN.Size = new System.Drawing.Size(141, 21);
-            this.comboBoxSr_DSN.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Максимальное значение";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(432, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Минимальное значение";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(222, 30);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Среднее значение";
-            // 
-            // textBoxMax_DSN
-            // 
-            this.textBoxMax_DSN.Location = new System.Drawing.Point(6, 102);
-            this.textBoxMax_DSN.Name = "textBoxMax_DSN";
-            this.textBoxMax_DSN.Size = new System.Drawing.Size(75, 20);
-            this.textBoxMax_DSN.TabIndex = 6;
-            // 
-            // buttonDone_DSN
-            // 
-            this.buttonDone_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDone_DSN.Location = new System.Drawing.Point(6, 73);
-            this.buttonDone_DSN.Name = "buttonDone_DSN";
-            this.buttonDone_DSN.Size = new System.Drawing.Size(75, 23);
-            this.buttonDone_DSN.TabIndex = 7;
-            this.buttonDone_DSN.Text = "Выполнить";
-            this.toolTip.SetToolTip(this.buttonDone_DSN, "Выводит максимальное значение");
-            this.buttonDone_DSN.UseVisualStyleBackColor = true;
-            this.buttonDone_DSN.Click += new System.EventHandler(this.buttonDone_DSN_Click);
-            // 
-            // textBoxMin_DSN
-            // 
-            this.textBoxMin_DSN.Location = new System.Drawing.Point(435, 102);
-            this.textBoxMin_DSN.Name = "textBoxMin_DSN";
-            this.textBoxMin_DSN.Size = new System.Drawing.Size(75, 20);
-            this.textBoxMin_DSN.TabIndex = 8;
-            // 
-            // buttonSrZnach_DSN
-            // 
-            this.buttonSrZnach_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSrZnach_DSN.Location = new System.Drawing.Point(225, 76);
-            this.buttonSrZnach_DSN.Name = "buttonSrZnach_DSN";
-            this.buttonSrZnach_DSN.Size = new System.Drawing.Size(75, 23);
-            this.buttonSrZnach_DSN.TabIndex = 9;
-            this.buttonSrZnach_DSN.Text = "Выполнить";
-            this.toolTip.SetToolTip(this.buttonSrZnach_DSN, "Выводит минимальное значение");
-            this.buttonSrZnach_DSN.UseVisualStyleBackColor = true;
-            this.buttonSrZnach_DSN.Click += new System.EventHandler(this.buttonSrZnach_DSN_Click);
-            // 
-            // textBoxSr_DSN
-            // 
-            this.textBoxSr_DSN.Location = new System.Drawing.Point(225, 105);
-            this.textBoxSr_DSN.Name = "textBoxSr_DSN";
-            this.textBoxSr_DSN.Size = new System.Drawing.Size(75, 20);
-            this.textBoxSr_DSN.TabIndex = 10;
-            // 
-            // buttonMin_DSN
-            // 
-            this.buttonMin_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonMin_DSN.Location = new System.Drawing.Point(435, 73);
-            this.buttonMin_DSN.Name = "buttonMin_DSN";
-            this.buttonMin_DSN.Size = new System.Drawing.Size(75, 23);
-            this.buttonMin_DSN.TabIndex = 11;
-            this.buttonMin_DSN.Text = "Выполнить";
-            this.toolTip.SetToolTip(this.buttonMin_DSN, "Вычисляет среднее значение");
-            this.buttonMin_DSN.UseVisualStyleBackColor = true;
-            this.buttonMin_DSN.Click += new System.EventHandler(this.buttonMin_DSN_Click);
             // 
             // FormPacient
             // 

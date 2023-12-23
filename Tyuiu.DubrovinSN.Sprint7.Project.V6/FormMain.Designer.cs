@@ -43,6 +43,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // 
             // buttonInfoRazrab_DSN
             // 
+            this.buttonInfoRazrab_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonInfoRazrab_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_id_card_9386768;
             this.buttonInfoRazrab_DSN.Location = new System.Drawing.Point(12, 12);
             this.buttonInfoRazrab_DSN.Name = "buttonInfoRazrab_DSN";
@@ -57,6 +58,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.buttonPatients_DSN.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonPatients_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonPatients_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_doctor_patient_6401436;
             this.buttonPatients_DSN.Location = new System.Drawing.Point(128, 12);
             this.buttonPatients_DSN.Name = "buttonPatients_DSN";
@@ -69,6 +71,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // buttonInfo_DSN
             // 
             this.buttonInfo_DSN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonInfo_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonInfo_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_info_943579;
             this.buttonInfo_DSN.Location = new System.Drawing.Point(12, 558);
             this.buttonInfo_DSN.Name = "buttonInfo_DSN";
