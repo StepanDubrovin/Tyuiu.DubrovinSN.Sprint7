@@ -63,6 +63,16 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ava {
+            get {
+                object obj = ResourceManager.GetObject("ava", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap direct_download {
             get {
                 object obj = ResourceManager.GetObject("direct-download", resourceCulture);
@@ -276,6 +286,76 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties {
         internal static System.Drawing.Bitmap fyl26wep3gY {
             get {
                 object obj = ResourceManager.GetObject("fyl26wep3gY", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imgonline_com_ua_Resize_nLyXKOGAl9Dd {
+            get {
+                object obj = ResourceManager.GetObject("imgonline-com-ua-Resize-nLyXKOGAl9Dd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imgonline_com_ua_Resize_nLyXKOGAl9Dd1 {
+            get {
+                object obj = ResourceManager.GetObject("imgonline-com-ua-Resize-nLyXKOGAl9Dd1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imgonline_com_ua_Resize_nLyXKOGAl9Dd2 {
+            get {
+                object obj = ResourceManager.GetObject("imgonline-com-ua-Resize-nLyXKOGAl9Dd2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imgonline_com_ua_Resize_nLyXKOGAl9Dd3 {
+            get {
+                object obj = ResourceManager.GetObject("imgonline-com-ua-Resize-nLyXKOGAl9Dd3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tBhQrwFYbqE {
+            get {
+                object obj = ResourceManager.GetObject("tBhQrwFYbqE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tBhQrwFYbqE1 {
+            get {
+                object obj = ResourceManager.GetObject("tBhQrwFYbqE1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tBhQrwFYbqE2 {
+            get {
+                object obj = ResourceManager.GetObject("tBhQrwFYbqE2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

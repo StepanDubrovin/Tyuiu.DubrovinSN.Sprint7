@@ -118,37 +118,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\free-icon-open-file-4847498.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\direct-download.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\free-icon-information-1055189.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\free-icon-patient-4465493.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\free-icon-patient-4465493 %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\free-icon-patient-4465493 %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\free-icon-nurse-10342190.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\free-icon-info-943579.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\free-icon-information-7542177.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fyl26wep3gY.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\free-icon-line-chart-126425.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\free-icon-clear-3602045.png" />
@@ -158,9 +128,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\free-icon-photo-11918718.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\free-icon-graph-8780403.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\free-icon-id-card-9386768.png" />

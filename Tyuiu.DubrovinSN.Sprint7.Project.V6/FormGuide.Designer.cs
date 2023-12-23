@@ -63,9 +63,11 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.ClientSize = new System.Drawing.Size(1469, 738);
             this.Controls.Add(this.labelRuc_DSN);
             this.Controls.Add(this.buttonOk_DSN);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "FormGuide";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Руководство по использованию приложения";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

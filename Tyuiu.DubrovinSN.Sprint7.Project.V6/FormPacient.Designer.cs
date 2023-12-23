@@ -46,6 +46,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.comboBoxMax_DSN = new System.Windows.Forms.ComboBox();
             this.groupBoxViltr_DSN = new System.Windows.Forms.GroupBox();
             this.buttonViltr_DSN = new System.Windows.Forms.Button();
+            this.labelVibor_DSN = new System.Windows.Forms.Label();
             this.textBoxVibor_DSN = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.groupBoxSearch_DSN = new System.Windows.Forms.GroupBox();
@@ -74,7 +75,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
-            this.labelVibor_DSN = new System.Windows.Forms.Label();
             this.panelUp_DSN.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBoxViltr_DSN.SuspendLayout();
@@ -260,6 +260,15 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.buttonViltr_DSN.TabIndex = 4;
             this.buttonViltr_DSN.UseVisualStyleBackColor = true;
             this.buttonViltr_DSN.Click += new System.EventHandler(this.buttonViltr_DSN_Click);
+            // 
+            // labelVibor_DSN
+            // 
+            this.labelVibor_DSN.AutoSize = true;
+            this.labelVibor_DSN.Location = new System.Drawing.Point(6, 31);
+            this.labelVibor_DSN.Name = "labelVibor_DSN";
+            this.labelVibor_DSN.Size = new System.Drawing.Size(204, 13);
+            this.labelVibor_DSN.TabIndex = 3;
+            this.labelVibor_DSN.Text = "Укажите нужный парметр фильтрации";
             // 
             // textBoxVibor_DSN
             // 
@@ -520,15 +529,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // openFileDialog
             // 
             this.openFileDialog.FileName = "openFileDialog1";
-            // 
-            // labelVibor_DSN
-            // 
-            this.labelVibor_DSN.AutoSize = true;
-            this.labelVibor_DSN.Location = new System.Drawing.Point(6, 31);
-            this.labelVibor_DSN.Name = "labelVibor_DSN";
-            this.labelVibor_DSN.Size = new System.Drawing.Size(204, 13);
-            this.labelVibor_DSN.TabIndex = 3;
-            this.labelVibor_DSN.Text = "Укажите нужный парметр фильтрации";
             // 
             // FormPacient
             // 

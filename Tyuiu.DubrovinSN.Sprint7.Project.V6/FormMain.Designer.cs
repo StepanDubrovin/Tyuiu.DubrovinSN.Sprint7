@@ -64,7 +64,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.buttonPatients_DSN.Name = "buttonPatients_DSN";
             this.buttonPatients_DSN.Size = new System.Drawing.Size(957, 652);
             this.buttonPatients_DSN.TabIndex = 3;
-            this.toolTip.SetToolTip(this.buttonPatients_DSN, "Информация о пациентах");
+            this.toolTip.SetToolTip(this.buttonPatients_DSN, "Переход к инструментальному окну");
             this.buttonPatients_DSN.UseVisualStyleBackColor = true;
             this.buttonPatients_DSN.Click += new System.EventHandler(this.buttonPatients_DSN_Click);
             // 
