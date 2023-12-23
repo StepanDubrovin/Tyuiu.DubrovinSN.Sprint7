@@ -29,55 +29,57 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chartFunction_DSN = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelNiz_DSN = new System.Windows.Forms.Panel();
             this.buttonSaveGraph_DSN = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelMiddle_DSN = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.выбиритеСтолбецДляПостроенияДиаграммыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.столбецДиагнозToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.столбецToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.амбулаторноеЛечениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.должностьВрачаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttonBack_DSN = new System.Windows.Forms.Button();
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.chartFunction_DSN)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panelNiz_DSN.SuspendLayout();
+            this.panelMiddle_DSN.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // chartFunction_DSN
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chartFunction_DSN.ChartAreas.Add(chartArea3);
+            chartArea2.Name = "ChartArea1";
+            this.chartFunction_DSN.ChartAreas.Add(chartArea2);
             this.chartFunction_DSN.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend3.BorderColor = System.Drawing.Color.Black;
-            legend3.Name = "Legend1";
-            this.chartFunction_DSN.Legends.Add(legend3);
+            legend2.BorderColor = System.Drawing.Color.Black;
+            legend2.Name = "Legend1";
+            this.chartFunction_DSN.Legends.Add(legend2);
             this.chartFunction_DSN.Location = new System.Drawing.Point(0, 24);
             this.chartFunction_DSN.Name = "chartFunction_DSN";
             this.chartFunction_DSN.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series3.ChartArea = "ChartArea1";
-            series3.Color = System.Drawing.Color.DarkSlateGray;
-            series3.IsVisibleInLegend = false;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chartFunction_DSN.Series.Add(series3);
+            series2.ChartArea = "ChartArea1";
+            series2.Color = System.Drawing.Color.DarkSlateGray;
+            series2.IsVisibleInLegend = false;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartFunction_DSN.Series.Add(series2);
             this.chartFunction_DSN.Size = new System.Drawing.Size(1364, 605);
             this.chartFunction_DSN.TabIndex = 0;
             // 
-            // panel1
+            // panelNiz_DSN
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Controls.Add(this.buttonSaveGraph_DSN);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 629);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1364, 83);
-            this.panel1.TabIndex = 1;
+            this.panelNiz_DSN.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panelNiz_DSN.Controls.Add(this.buttonBack_DSN);
+            this.panelNiz_DSN.Controls.Add(this.buttonSaveGraph_DSN);
+            this.panelNiz_DSN.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelNiz_DSN.Location = new System.Drawing.Point(0, 629);
+            this.panelNiz_DSN.Name = "panelNiz_DSN";
+            this.panelNiz_DSN.Size = new System.Drawing.Size(1364, 83);
+            this.panelNiz_DSN.TabIndex = 1;
             // 
             // buttonSaveGraph_DSN
             // 
@@ -88,16 +90,17 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.buttonSaveGraph_DSN.Size = new System.Drawing.Size(72, 61);
             this.buttonSaveGraph_DSN.TabIndex = 1;
             this.buttonSaveGraph_DSN.UseVisualStyleBackColor = true;
+            this.buttonSaveGraph_DSN.Click += new System.EventHandler(this.buttonSaveGraph_DSN_Click);
             // 
-            // panel3
+            // panelMiddle_DSN
             // 
-            this.panel3.Controls.Add(this.chartFunction_DSN);
-            this.panel3.Controls.Add(this.menuStrip1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1364, 629);
-            this.panel3.TabIndex = 4;
+            this.panelMiddle_DSN.Controls.Add(this.chartFunction_DSN);
+            this.panelMiddle_DSN.Controls.Add(this.menuStrip1);
+            this.panelMiddle_DSN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMiddle_DSN.Location = new System.Drawing.Point(0, 0);
+            this.panelMiddle_DSN.Name = "panelMiddle_DSN";
+            this.panelMiddle_DSN.Size = new System.Drawing.Size(1364, 629);
+            this.panelMiddle_DSN.TabIndex = 4;
             // 
             // menuStrip1
             // 
@@ -111,6 +114,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // 
             // выбиритеСтолбецДляПостроенияДиаграммыToolStripMenuItem
             // 
+            this.выбиритеСтолбецДляПостроенияДиаграммыToolStripMenuItem.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.выбиритеСтолбецДляПостроенияДиаграммыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.столбецДиагнозToolStripMenuItem,
             this.столбецToolStripMenuItem,
@@ -134,10 +138,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.столбецToolStripMenuItem.Text = "Столбец \"На диспансерном учете\"";
             this.столбецToolStripMenuItem.Click += new System.EventHandler(this.столбецToolStripMenuItem_Click);
             // 
-            // openFileDialog
-            // 
-            this.openFileDialog.FileName = "openFileDialog1";
-            // 
             // амбулаторноеЛечениеToolStripMenuItem
             // 
             this.амбулаторноеЛечениеToolStripMenuItem.Name = "амбулаторноеЛечениеToolStripMenuItem";
@@ -152,22 +152,32 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.должностьВрачаToolStripMenuItem.Text = "Столбец \"Должность врача\"";
             this.должностьВрачаToolStripMenuItem.Click += new System.EventHandler(this.должностьВрачаToolStripMenuItem_Click);
             // 
+            // buttonBack_DSN
+            // 
+            this.buttonBack_DSN.Location = new System.Drawing.Point(12, 12);
+            this.buttonBack_DSN.Name = "buttonBack_DSN";
+            this.buttonBack_DSN.Size = new System.Drawing.Size(72, 61);
+            this.buttonBack_DSN.TabIndex = 2;
+            this.buttonBack_DSN.Text = "Ок";
+            this.buttonBack_DSN.UseVisualStyleBackColor = true;
+            this.buttonBack_DSN.Click += new System.EventHandler(this.buttonBack_DSN_Click);
+            // 
             // FormFunction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1364, 712);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelMiddle_DSN);
+            this.Controls.Add(this.panelNiz_DSN);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormFunction";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "График функции";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.chartFunction_DSN)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.panelNiz_DSN.ResumeLayout(false);
+            this.panelMiddle_DSN.ResumeLayout(false);
+            this.panelMiddle_DSN.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -177,15 +187,16 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         #endregion
 
         private System.Windows.Forms.DataVisualization.Charting.Chart chartFunction_DSN;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelNiz_DSN;
+        private System.Windows.Forms.Panel panelMiddle_DSN;
         private System.Windows.Forms.Button buttonSaveGraph_DSN;
-        private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem выбиритеСтолбецДляПостроенияДиаграммыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem столбецДиагнозToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem столбецToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem амбулаторноеЛечениеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem должностьВрачаToolStripMenuItem;
+        private System.Windows.Forms.Button buttonBack_DSN;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog;
     }
 }

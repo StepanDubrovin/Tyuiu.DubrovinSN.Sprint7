@@ -62,40 +62,47 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         {
             try
             {
-                saveFileDialog.FileName = "Информация о пациентах.csv";
+                saveFileDialog.FileName = "Информация о пациентах(выгрузка).csv";
                 saveFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
-
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     string path = saveFileDialog.FileName;
-
                     if (File.Exists(path))
                     {
                         File.Delete(path);
                     }
-
-                    int rows = dataGridViewInMatrix_DSN.RowCount;
-                    int columns = dataGridViewInMatrix_DSN.ColumnCount;
-
-                    StringBuilder strBuilder = new StringBuilder();
-
-                    for (int i = 0; i < rows; i++)
+                    DataTable newMatrix = new DataTable();
+                    foreach (DataGridViewColumn column in dataGridViewInMatrix_DSN.Columns)
                     {
-                        for (int j = 0; j < columns; j++)
+                        newMatrix.Columns.Add(column.HeaderText);
+                    }
+                    foreach (DataGridViewRow row in dataGridViewInMatrix_DSN.Rows)
+                    {
+                        if (row.Visible) 
                         {
-                            strBuilder.Append(dataGridViewInMatrix_DSN.Rows[i].Cells[j].Value);
+                            DataRow nrows = newMatrix.Rows.Add();
+                            foreach (DataGridViewCell cell in row.Cells)
+                            {
+                                nrows[cell.ColumnIndex] = cell.Value;
+                            }
+                        }
+                    }
+                    StringBuilder strBuilder = new StringBuilder();
+                    foreach (DataRow row in newMatrix.Rows)
+                    {
+                        foreach (DataColumn column in newMatrix.Columns)
+                        {
+                            strBuilder.Append(row[column]);
 
-                            if (j != columns - 1)
+                            if (column.Ordinal < newMatrix.Columns.Count - 1)
                             {
                                 strBuilder.Append(";");
                             }
                         }
-
                         strBuilder.AppendLine();
                     }
 
                     File.WriteAllText(path, strBuilder.ToString(), Encoding.UTF8);
-
                     MessageBox.Show("Файл успешно сохранен", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
@@ -151,6 +158,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
                     }
                 }
             }
+    
         }
 
         private void солбецВозрастToolStripMenuItem_Click(object sender, EventArgs e)
@@ -287,8 +295,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
                 }
             }
             textBoxMax_DSN.Text = maxValue.ToString();
-
-
         }
 
         private void buttonMin_DSN_Click(object sender, EventArgs e)

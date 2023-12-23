@@ -76,6 +76,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormAbout";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Информация о программе";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

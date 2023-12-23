@@ -75,7 +75,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
 
             if (columns > columnD)
             {
-                for (int r = 0; r < rows; r++)
+                for (int r = 1; r < rows; r++)
                 {
                     string d = matrix[r, columnD].ToString();
                     if (count.ContainsKey(d))
@@ -114,7 +114,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
 
             if (columns > columnD)
             {
-                for (int r = 0; r < rows; r++)
+                for (int r = 1; r < rows; r++)
                 {
                     string d = matrix[r, columnD].ToString();
                     if (count.ContainsKey(d))
@@ -153,7 +153,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
 
             if (columns > columnD)
             {
-                for (int r = 0; r < rows; r++)
+                for (int r = 1; r < rows; r++)
                 {
                     string d = matrix[r, columnD].ToString();
                     if (count.ContainsKey(d))
@@ -180,6 +180,18 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
                 chartFunction_DSN.Series.Add(series);
                 chartFunction_DSN.Update();
             }
+        }
+
+        private void buttonBack_DSN_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void buttonSaveGraph_DSN_Click(object sender, EventArgs e)
+        {
+            string saveCh = Environment.CurrentDirectory + "\\chartFunction_DSN.png";
+            chartFunction_DSN.SaveImage(saveCh, ChartImageFormat.Png);
+            MessageBox.Show("Диаграмма успешно сохранена", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

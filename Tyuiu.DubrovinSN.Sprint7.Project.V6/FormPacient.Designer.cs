@@ -29,6 +29,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelUp_DSN = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttonMin_DSN = new System.Windows.Forms.Button();
@@ -45,8 +46,8 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.comboBoxMax_DSN = new System.Windows.Forms.ComboBox();
             this.groupBoxViltr_DSN = new System.Windows.Forms.GroupBox();
             this.buttonViltr_DSN = new System.Windows.Forms.Button();
-            this.labelVibor_DSN = new System.Windows.Forms.Label();
             this.textBoxVibor_DSN = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.groupBoxSearch_DSN = new System.Windows.Forms.GroupBox();
             this.buttonSerch_DSN = new System.Windows.Forms.Button();
             this.textBoxReserch_DSN = new System.Windows.Forms.TextBox();
@@ -70,9 +71,10 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.солбецВозрастToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.столбецКабинетВрачаToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.столбецСрокЛеченияToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolTip = new System.Windows.Forms.ToolTip();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.labelVibor_DSN = new System.Windows.Forms.Label();
             this.panelUp_DSN.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBoxViltr_DSN.SuspendLayout();
@@ -111,9 +113,9 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.groupBox1.Controls.Add(this.comboBoxSr_DSN);
             this.groupBox1.Controls.Add(this.comboBoxMin_DSN);
             this.groupBox1.Controls.Add(this.comboBoxMax_DSN);
-            this.groupBox1.Location = new System.Drawing.Point(647, 13);
+            this.groupBox1.Location = new System.Drawing.Point(653, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(584, 135);
+            this.groupBox1.Size = new System.Drawing.Size(582, 135);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Элменты статистики";
@@ -240,9 +242,10 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.groupBoxViltr_DSN.Controls.Add(this.buttonViltr_DSN);
             this.groupBoxViltr_DSN.Controls.Add(this.labelVibor_DSN);
             this.groupBoxViltr_DSN.Controls.Add(this.textBoxVibor_DSN);
+            this.groupBoxViltr_DSN.Controls.Add(this.menuStrip1);
             this.groupBoxViltr_DSN.Location = new System.Drawing.Point(328, 12);
             this.groupBoxViltr_DSN.Name = "groupBoxViltr_DSN";
-            this.groupBoxViltr_DSN.Size = new System.Drawing.Size(312, 135);
+            this.groupBoxViltr_DSN.Size = new System.Drawing.Size(319, 135);
             this.groupBoxViltr_DSN.TabIndex = 2;
             this.groupBoxViltr_DSN.TabStop = false;
             this.groupBoxViltr_DSN.Text = "Фильтрация";
@@ -251,29 +254,29 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // 
             this.buttonViltr_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonViltr_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_filtering_6303429;
-            this.buttonViltr_DSN.Location = new System.Drawing.Point(234, 68);
+            this.buttonViltr_DSN.Location = new System.Drawing.Point(241, 68);
             this.buttonViltr_DSN.Name = "buttonViltr_DSN";
             this.buttonViltr_DSN.Size = new System.Drawing.Size(72, 61);
             this.buttonViltr_DSN.TabIndex = 4;
             this.buttonViltr_DSN.UseVisualStyleBackColor = true;
             this.buttonViltr_DSN.Click += new System.EventHandler(this.buttonViltr_DSN_Click);
             // 
-            // labelVibor_DSN
-            // 
-            this.labelVibor_DSN.AutoSize = true;
-            this.labelVibor_DSN.Location = new System.Drawing.Point(6, 31);
-            this.labelVibor_DSN.Name = "labelVibor_DSN";
-            this.labelVibor_DSN.Size = new System.Drawing.Size(204, 13);
-            this.labelVibor_DSN.TabIndex = 3;
-            this.labelVibor_DSN.Text = "Укажите нужный парметр фильтрации";
-            // 
             // textBoxVibor_DSN
             // 
-            this.textBoxVibor_DSN.Location = new System.Drawing.Point(6, 61);
+            this.textBoxVibor_DSN.Location = new System.Drawing.Point(9, 61);
             this.textBoxVibor_DSN.Multiline = true;
             this.textBoxVibor_DSN.Name = "textBoxVibor_DSN";
             this.textBoxVibor_DSN.Size = new System.Drawing.Size(178, 20);
             this.textBoxVibor_DSN.TabIndex = 2;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.menuStrip1.Location = new System.Drawing.Point(3, 16);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(30, 116);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // groupBoxSearch_DSN
             // 
@@ -419,7 +422,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.groupBox_Input_DSN.Size = new System.Drawing.Size(1279, 516);
             this.groupBox_Input_DSN.TabIndex = 0;
             this.groupBox_Input_DSN.TabStop = false;
-            this.groupBox_Input_DSN.Text = "Информация о пациентах";
+            this.groupBox_Input_DSN.Text = "Информация о пациентах      ";
             // 
             // dataGridViewInMatrix_DSN
             // 
@@ -446,6 +449,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // поВозрастаниюToolStripMenuItem
             // 
             this.поВозрастаниюToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.поВозрастаниюToolStripMenuItem.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.поВозрастаниюToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.столбецВозрастToolStripMenuItem,
             this.столбецКабинетВрачаToolStripMenuItem,
@@ -478,6 +482,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // поУбываниюToolStripMenuItem
             // 
             this.поУбываниюToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.поУбываниюToolStripMenuItem.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.поУбываниюToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.солбецВозрастToolStripMenuItem1,
             this.столбецКабинетВрачаToolStripMenuItem1,
@@ -515,6 +520,15 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // openFileDialog
             // 
             this.openFileDialog.FileName = "openFileDialog1";
+            // 
+            // labelVibor_DSN
+            // 
+            this.labelVibor_DSN.AutoSize = true;
+            this.labelVibor_DSN.Location = new System.Drawing.Point(6, 31);
+            this.labelVibor_DSN.Name = "labelVibor_DSN";
+            this.labelVibor_DSN.Size = new System.Drawing.Size(204, 13);
+            this.labelVibor_DSN.TabIndex = 3;
+            this.labelVibor_DSN.Text = "Укажите нужный парметр фильтрации";
             // 
             // FormPacient
             // 
@@ -564,7 +578,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         private System.Windows.Forms.DataGridView dataGridViewInMatrix_DSN;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
-        private System.Windows.Forms.Label labelVibor_DSN;
         private System.Windows.Forms.TextBox textBoxVibor_DSN;
         private System.Windows.Forms.Button buttonViltr_DSN;
         private System.Windows.Forms.TextBox textBoxReserch_DSN;
@@ -592,5 +605,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         private System.Windows.Forms.Button buttonMin_DSN;
         private System.Windows.Forms.TextBox textBoxSr_DSN;
         private System.Windows.Forms.Button buttonSrZnach_DSN;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.Label labelVibor_DSN;
     }
 }

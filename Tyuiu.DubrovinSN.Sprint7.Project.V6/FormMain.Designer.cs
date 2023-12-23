@@ -60,9 +60,9 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonPatients_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonPatients_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_doctor_patient_6401436;
-            this.buttonPatients_DSN.Location = new System.Drawing.Point(128, 12);
+            this.buttonPatients_DSN.Location = new System.Drawing.Point(248, 12);
             this.buttonPatients_DSN.Name = "buttonPatients_DSN";
-            this.buttonPatients_DSN.Size = new System.Drawing.Size(1077, 652);
+            this.buttonPatients_DSN.Size = new System.Drawing.Size(957, 652);
             this.buttonPatients_DSN.TabIndex = 3;
             this.toolTip.SetToolTip(this.buttonPatients_DSN, "Информация о пациентах");
             this.buttonPatients_DSN.UseVisualStyleBackColor = true;
