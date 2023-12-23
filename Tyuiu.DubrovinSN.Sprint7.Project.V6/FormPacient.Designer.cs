@@ -45,21 +45,14 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.comboBoxMin_DSN = new System.Windows.Forms.ComboBox();
             this.comboBoxMax_DSN = new System.Windows.Forms.ComboBox();
             this.groupBoxViltr_DSN = new System.Windows.Forms.GroupBox();
-            this.buttonViltr_DSN = new System.Windows.Forms.Button();
             this.labelVibor_DSN = new System.Windows.Forms.Label();
             this.textBoxVibor_DSN = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.groupBoxSearch_DSN = new System.Windows.Forms.GroupBox();
-            this.buttonSerch_DSN = new System.Windows.Forms.Button();
             this.textBoxReserch_DSN = new System.Windows.Forms.TextBox();
             this.label_Ser_DSN = new System.Windows.Forms.Label();
             this.panelLeft_DSN = new System.Windows.Forms.Panel();
             this.groupBoxButtons_DSN = new System.Windows.Forms.GroupBox();
-            this.buttonBackMatrix_DSN = new System.Windows.Forms.Button();
-            this.buttonDelete_DSN = new System.Windows.Forms.Button();
-            this.buttonFunction_DSN = new System.Windows.Forms.Button();
-            this.buttonSaveFile_DSN = new System.Windows.Forms.Button();
-            this.buttonOpenFile_DSN = new System.Windows.Forms.Button();
             this.panelFuncIn_DSN = new System.Windows.Forms.Panel();
             this.groupBox_Input_DSN = new System.Windows.Forms.GroupBox();
             this.dataGridViewInMatrix_DSN = new System.Windows.Forms.DataGridView();
@@ -75,6 +68,13 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.buttonBackMatrix_DSN = new System.Windows.Forms.Button();
+            this.buttonDelete_DSN = new System.Windows.Forms.Button();
+            this.buttonFunction_DSN = new System.Windows.Forms.Button();
+            this.buttonSaveFile_DSN = new System.Windows.Forms.Button();
+            this.buttonOpenFile_DSN = new System.Windows.Forms.Button();
+            this.buttonViltr_DSN = new System.Windows.Forms.Button();
+            this.buttonSerch_DSN = new System.Windows.Forms.Button();
             this.panelUp_DSN.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBoxViltr_DSN.SuspendLayout();
@@ -250,17 +250,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.groupBoxViltr_DSN.TabStop = false;
             this.groupBoxViltr_DSN.Text = "Фильтрация";
             // 
-            // buttonViltr_DSN
-            // 
-            this.buttonViltr_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonViltr_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_filtering_6303429;
-            this.buttonViltr_DSN.Location = new System.Drawing.Point(241, 68);
-            this.buttonViltr_DSN.Name = "buttonViltr_DSN";
-            this.buttonViltr_DSN.Size = new System.Drawing.Size(72, 61);
-            this.buttonViltr_DSN.TabIndex = 4;
-            this.buttonViltr_DSN.UseVisualStyleBackColor = true;
-            this.buttonViltr_DSN.Click += new System.EventHandler(this.buttonViltr_DSN_Click);
-            // 
             // labelVibor_DSN
             // 
             this.labelVibor_DSN.AutoSize = true;
@@ -298,17 +287,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.groupBoxSearch_DSN.TabIndex = 0;
             this.groupBoxSearch_DSN.TabStop = false;
             this.groupBoxSearch_DSN.Text = "Поиск";
-            // 
-            // buttonSerch_DSN
-            // 
-            this.buttonSerch_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSerch_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_search_4194705;
-            this.buttonSerch_DSN.Location = new System.Drawing.Point(234, 68);
-            this.buttonSerch_DSN.Name = "buttonSerch_DSN";
-            this.buttonSerch_DSN.Size = new System.Drawing.Size(72, 61);
-            this.buttonSerch_DSN.TabIndex = 3;
-            this.buttonSerch_DSN.UseVisualStyleBackColor = true;
-            this.buttonSerch_DSN.Click += new System.EventHandler(this.buttonSerch_DSN_Click);
             // 
             // textBoxReserch_DSN
             // 
@@ -349,68 +327,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.groupBoxButtons_DSN.TabIndex = 0;
             this.groupBoxButtons_DSN.TabStop = false;
             this.groupBoxButtons_DSN.Text = "Инструменты";
-            // 
-            // buttonBackMatrix_DSN
-            // 
-            this.buttonBackMatrix_DSN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonBackMatrix_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonBackMatrix_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_turn_back_4012671;
-            this.buttonBackMatrix_DSN.Location = new System.Drawing.Point(12, 376);
-            this.buttonBackMatrix_DSN.Name = "buttonBackMatrix_DSN";
-            this.buttonBackMatrix_DSN.Size = new System.Drawing.Size(72, 61);
-            this.buttonBackMatrix_DSN.TabIndex = 4;
-            this.toolTip.SetToolTip(this.buttonBackMatrix_DSN, "Возвращает исходную таблицу");
-            this.buttonBackMatrix_DSN.UseVisualStyleBackColor = true;
-            this.buttonBackMatrix_DSN.Click += new System.EventHandler(this.buttonBackMatrix_DSN_Click);
-            // 
-            // buttonDelete_DSN
-            // 
-            this.buttonDelete_DSN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonDelete_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDelete_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_clear_3602045;
-            this.buttonDelete_DSN.Location = new System.Drawing.Point(12, 443);
-            this.buttonDelete_DSN.Name = "buttonDelete_DSN";
-            this.buttonDelete_DSN.Size = new System.Drawing.Size(72, 61);
-            this.buttonDelete_DSN.TabIndex = 3;
-            this.toolTip.SetToolTip(this.buttonDelete_DSN, "Очищает таблицу с данными");
-            this.buttonDelete_DSN.UseVisualStyleBackColor = true;
-            this.buttonDelete_DSN.Click += new System.EventHandler(this.buttonDelete_DSN_Click);
-            // 
-            // buttonFunction_DSN
-            // 
-            this.buttonFunction_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonFunction_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_graph_3905407;
-            this.buttonFunction_DSN.Location = new System.Drawing.Point(12, 166);
-            this.buttonFunction_DSN.Name = "buttonFunction_DSN";
-            this.buttonFunction_DSN.Size = new System.Drawing.Size(72, 61);
-            this.buttonFunction_DSN.TabIndex = 2;
-            this.toolTip.SetToolTip(this.buttonFunction_DSN, "Переходит в окно с построением графика ");
-            this.buttonFunction_DSN.UseVisualStyleBackColor = true;
-            this.buttonFunction_DSN.Click += new System.EventHandler(this.buttonFunction_DSN_Click);
-            // 
-            // buttonSaveFile_DSN
-            // 
-            this.buttonSaveFile_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSaveFile_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_photo_11918718;
-            this.buttonSaveFile_DSN.Location = new System.Drawing.Point(12, 99);
-            this.buttonSaveFile_DSN.Name = "buttonSaveFile_DSN";
-            this.buttonSaveFile_DSN.Size = new System.Drawing.Size(72, 61);
-            this.buttonSaveFile_DSN.TabIndex = 1;
-            this.toolTip.SetToolTip(this.buttonSaveFile_DSN, "Сохраняет файл");
-            this.buttonSaveFile_DSN.UseVisualStyleBackColor = true;
-            this.buttonSaveFile_DSN.Click += new System.EventHandler(this.buttonSaveFile_DSN_Click);
-            // 
-            // buttonOpenFile_DSN
-            // 
-            this.buttonOpenFile_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonOpenFile_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_open_folder_8406407;
-            this.buttonOpenFile_DSN.Location = new System.Drawing.Point(12, 32);
-            this.buttonOpenFile_DSN.Name = "buttonOpenFile_DSN";
-            this.buttonOpenFile_DSN.Size = new System.Drawing.Size(72, 61);
-            this.buttonOpenFile_DSN.TabIndex = 0;
-            this.toolTip.SetToolTip(this.buttonOpenFile_DSN, "Открывает файл");
-            this.buttonOpenFile_DSN.UseVisualStyleBackColor = true;
-            this.buttonOpenFile_DSN.Click += new System.EventHandler(this.buttonOpenFile_DSN_Click);
             // 
             // panelFuncIn_DSN
             // 
@@ -529,6 +445,90 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // openFileDialog
             // 
             this.openFileDialog.FileName = "openFileDialog1";
+            // 
+            // buttonBackMatrix_DSN
+            // 
+            this.buttonBackMatrix_DSN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonBackMatrix_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonBackMatrix_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_turn_back_4012671;
+            this.buttonBackMatrix_DSN.Location = new System.Drawing.Point(12, 376);
+            this.buttonBackMatrix_DSN.Name = "buttonBackMatrix_DSN";
+            this.buttonBackMatrix_DSN.Size = new System.Drawing.Size(72, 61);
+            this.buttonBackMatrix_DSN.TabIndex = 4;
+            this.toolTip.SetToolTip(this.buttonBackMatrix_DSN, "Возвращает исходную таблицу");
+            this.buttonBackMatrix_DSN.UseVisualStyleBackColor = true;
+            this.buttonBackMatrix_DSN.Click += new System.EventHandler(this.buttonBackMatrix_DSN_Click);
+            // 
+            // buttonDelete_DSN
+            // 
+            this.buttonDelete_DSN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonDelete_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDelete_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_clear_3602045;
+            this.buttonDelete_DSN.Location = new System.Drawing.Point(12, 443);
+            this.buttonDelete_DSN.Name = "buttonDelete_DSN";
+            this.buttonDelete_DSN.Size = new System.Drawing.Size(72, 61);
+            this.buttonDelete_DSN.TabIndex = 3;
+            this.toolTip.SetToolTip(this.buttonDelete_DSN, "Очищает таблицу с данными");
+            this.buttonDelete_DSN.UseVisualStyleBackColor = true;
+            this.buttonDelete_DSN.Click += new System.EventHandler(this.buttonDelete_DSN_Click);
+            // 
+            // buttonFunction_DSN
+            // 
+            this.buttonFunction_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonFunction_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_graph_3905407;
+            this.buttonFunction_DSN.Location = new System.Drawing.Point(12, 166);
+            this.buttonFunction_DSN.Name = "buttonFunction_DSN";
+            this.buttonFunction_DSN.Size = new System.Drawing.Size(72, 61);
+            this.buttonFunction_DSN.TabIndex = 2;
+            this.toolTip.SetToolTip(this.buttonFunction_DSN, "Переходит в окно с построением графика ");
+            this.buttonFunction_DSN.UseVisualStyleBackColor = true;
+            this.buttonFunction_DSN.Click += new System.EventHandler(this.buttonFunction_DSN_Click);
+            // 
+            // buttonSaveFile_DSN
+            // 
+            this.buttonSaveFile_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSaveFile_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_photo_11918718;
+            this.buttonSaveFile_DSN.Location = new System.Drawing.Point(12, 99);
+            this.buttonSaveFile_DSN.Name = "buttonSaveFile_DSN";
+            this.buttonSaveFile_DSN.Size = new System.Drawing.Size(72, 61);
+            this.buttonSaveFile_DSN.TabIndex = 1;
+            this.toolTip.SetToolTip(this.buttonSaveFile_DSN, "Сохраняет файл");
+            this.buttonSaveFile_DSN.UseVisualStyleBackColor = true;
+            this.buttonSaveFile_DSN.Click += new System.EventHandler(this.buttonSaveFile_DSN_Click);
+            // 
+            // buttonOpenFile_DSN
+            // 
+            this.buttonOpenFile_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonOpenFile_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_open_folder_8406407;
+            this.buttonOpenFile_DSN.Location = new System.Drawing.Point(12, 32);
+            this.buttonOpenFile_DSN.Name = "buttonOpenFile_DSN";
+            this.buttonOpenFile_DSN.Size = new System.Drawing.Size(72, 61);
+            this.buttonOpenFile_DSN.TabIndex = 0;
+            this.toolTip.SetToolTip(this.buttonOpenFile_DSN, "Открывает файл");
+            this.buttonOpenFile_DSN.UseVisualStyleBackColor = true;
+            this.buttonOpenFile_DSN.Click += new System.EventHandler(this.buttonOpenFile_DSN_Click);
+            // 
+            // buttonViltr_DSN
+            // 
+            this.buttonViltr_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonViltr_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_filtering_6303429;
+            this.buttonViltr_DSN.Location = new System.Drawing.Point(241, 68);
+            this.buttonViltr_DSN.Name = "buttonViltr_DSN";
+            this.buttonViltr_DSN.Size = new System.Drawing.Size(72, 61);
+            this.buttonViltr_DSN.TabIndex = 4;
+            this.buttonViltr_DSN.UseVisualStyleBackColor = true;
+            this.buttonViltr_DSN.Click += new System.EventHandler(this.buttonViltr_DSN_Click);
+            // 
+            // buttonSerch_DSN
+            // 
+            this.buttonSerch_DSN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSerch_DSN.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.free_icon_search_4194705;
+            this.buttonSerch_DSN.Location = new System.Drawing.Point(234, 68);
+            this.buttonSerch_DSN.Name = "buttonSerch_DSN";
+            this.buttonSerch_DSN.Size = new System.Drawing.Size(72, 61);
+            this.buttonSerch_DSN.TabIndex = 3;
+            this.buttonSerch_DSN.UseVisualStyleBackColor = true;
+            this.buttonSerch_DSN.Click += new System.EventHandler(this.buttonSerch_DSN_Click);
             // 
             // FormPacient
             // 

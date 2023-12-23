@@ -50,7 +50,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.labelInfo_DSN.AutoSize = true;
             this.labelInfo_DSN.Location = new System.Drawing.Point(12, 9);
             this.labelInfo_DSN.Name = "labelInfo_DSN";
-            this.labelInfo_DSN.Size = new System.Drawing.Size(284, 130);
+            this.labelInfo_DSN.Size = new System.Drawing.Size(284, 143);
             this.labelInfo_DSN.TabIndex = 2;
             this.labelInfo_DSN.Text = resources.GetString("labelInfo_DSN.Text");
             // 
