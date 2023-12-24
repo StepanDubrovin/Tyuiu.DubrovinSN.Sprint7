@@ -32,6 +32,8 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
             this.button1 = new System.Windows.Forms.Button();
             this.labelInfo_DSN = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -48,17 +50,27 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // labelInfo_DSN
             // 
             this.labelInfo_DSN.AutoSize = true;
-            this.labelInfo_DSN.Location = new System.Drawing.Point(12, 9);
+            this.labelInfo_DSN.Location = new System.Drawing.Point(267, 12);
             this.labelInfo_DSN.Name = "labelInfo_DSN";
             this.labelInfo_DSN.Size = new System.Drawing.Size(284, 143);
             this.labelInfo_DSN.TabIndex = 2;
             this.labelInfo_DSN.Text = resources.GetString("labelInfo_DSN.Text");
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Tyuiu.DubrovinSN.Sprint7.Project.V6.Properties.Resources.аваа__2_;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(224, 301);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // FormAbout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(703, 325);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelInfo_DSN);
             this.Controls.Add(this.button1);
             this.MaximizeBox = false;
@@ -66,6 +78,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.Name = "FormAbout";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Информация о программе";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -75,5 +88,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label labelInfo_DSN;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

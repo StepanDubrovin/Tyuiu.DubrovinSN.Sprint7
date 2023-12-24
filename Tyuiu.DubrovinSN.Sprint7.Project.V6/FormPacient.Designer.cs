@@ -31,23 +31,22 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         {
             this.components = new System.ComponentModel.Container();
             this.panelUp_DSN = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBoxStatistic_DSN = new System.Windows.Forms.GroupBox();
             this.buttonMin_DSN = new System.Windows.Forms.Button();
             this.textBoxSr_DSN = new System.Windows.Forms.TextBox();
             this.buttonSrZnach_DSN = new System.Windows.Forms.Button();
             this.textBoxMin_DSN = new System.Windows.Forms.TextBox();
             this.buttonDone_DSN = new System.Windows.Forms.Button();
             this.textBoxMax_DSN = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelSrDan_DSN = new System.Windows.Forms.Label();
+            this.labelMinDan_DSN = new System.Windows.Forms.Label();
+            this.labelMaxDan_DSN = new System.Windows.Forms.Label();
             this.comboBoxSr_DSN = new System.Windows.Forms.ComboBox();
             this.comboBoxMin_DSN = new System.Windows.Forms.ComboBox();
             this.comboBoxMax_DSN = new System.Windows.Forms.ComboBox();
             this.groupBoxViltr_DSN = new System.Windows.Forms.GroupBox();
             this.labelVibor_DSN = new System.Windows.Forms.Label();
             this.textBoxVibor_DSN = new System.Windows.Forms.TextBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.groupBoxSearch_DSN = new System.Windows.Forms.GroupBox();
             this.textBoxReserch_DSN = new System.Windows.Forms.TextBox();
             this.label_Ser_DSN = new System.Windows.Forms.Label();
@@ -76,7 +75,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.buttonViltr_DSN = new System.Windows.Forms.Button();
             this.buttonSerch_DSN = new System.Windows.Forms.Button();
             this.panelUp_DSN.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.groupBoxStatistic_DSN.SuspendLayout();
             this.groupBoxViltr_DSN.SuspendLayout();
             this.groupBoxSearch_DSN.SuspendLayout();
             this.panelLeft_DSN.SuspendLayout();
@@ -90,7 +89,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // panelUp_DSN
             // 
             this.panelUp_DSN.BackColor = System.Drawing.SystemColors.Control;
-            this.panelUp_DSN.Controls.Add(this.groupBox1);
+            this.panelUp_DSN.Controls.Add(this.groupBoxStatistic_DSN);
             this.panelUp_DSN.Controls.Add(this.groupBoxViltr_DSN);
             this.panelUp_DSN.Controls.Add(this.groupBoxSearch_DSN);
             this.panelUp_DSN.Dock = System.Windows.Forms.DockStyle.Top;
@@ -99,26 +98,26 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.panelUp_DSN.Size = new System.Drawing.Size(1379, 153);
             this.panelUp_DSN.TabIndex = 0;
             // 
-            // groupBox1
+            // groupBoxStatistic_DSN
             // 
-            this.groupBox1.Controls.Add(this.buttonMin_DSN);
-            this.groupBox1.Controls.Add(this.textBoxSr_DSN);
-            this.groupBox1.Controls.Add(this.buttonSrZnach_DSN);
-            this.groupBox1.Controls.Add(this.textBoxMin_DSN);
-            this.groupBox1.Controls.Add(this.buttonDone_DSN);
-            this.groupBox1.Controls.Add(this.textBoxMax_DSN);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.comboBoxSr_DSN);
-            this.groupBox1.Controls.Add(this.comboBoxMin_DSN);
-            this.groupBox1.Controls.Add(this.comboBoxMax_DSN);
-            this.groupBox1.Location = new System.Drawing.Point(653, 13);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(582, 135);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Элменты статистики";
+            this.groupBoxStatistic_DSN.Controls.Add(this.buttonMin_DSN);
+            this.groupBoxStatistic_DSN.Controls.Add(this.textBoxSr_DSN);
+            this.groupBoxStatistic_DSN.Controls.Add(this.buttonSrZnach_DSN);
+            this.groupBoxStatistic_DSN.Controls.Add(this.textBoxMin_DSN);
+            this.groupBoxStatistic_DSN.Controls.Add(this.buttonDone_DSN);
+            this.groupBoxStatistic_DSN.Controls.Add(this.textBoxMax_DSN);
+            this.groupBoxStatistic_DSN.Controls.Add(this.labelSrDan_DSN);
+            this.groupBoxStatistic_DSN.Controls.Add(this.labelMinDan_DSN);
+            this.groupBoxStatistic_DSN.Controls.Add(this.labelMaxDan_DSN);
+            this.groupBoxStatistic_DSN.Controls.Add(this.comboBoxSr_DSN);
+            this.groupBoxStatistic_DSN.Controls.Add(this.comboBoxMin_DSN);
+            this.groupBoxStatistic_DSN.Controls.Add(this.comboBoxMax_DSN);
+            this.groupBoxStatistic_DSN.Location = new System.Drawing.Point(653, 13);
+            this.groupBoxStatistic_DSN.Name = "groupBoxStatistic_DSN";
+            this.groupBoxStatistic_DSN.Size = new System.Drawing.Size(582, 135);
+            this.groupBoxStatistic_DSN.TabIndex = 3;
+            this.groupBoxStatistic_DSN.TabStop = false;
+            this.groupBoxStatistic_DSN.Text = "Элменты статистики";
             // 
             // buttonMin_DSN
             // 
@@ -177,32 +176,32 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.textBoxMax_DSN.Size = new System.Drawing.Size(75, 20);
             this.textBoxMax_DSN.TabIndex = 6;
             // 
-            // label3
+            // labelSrDan_DSN
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(222, 30);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Среднее значение";
+            this.labelSrDan_DSN.AutoSize = true;
+            this.labelSrDan_DSN.Location = new System.Drawing.Point(222, 30);
+            this.labelSrDan_DSN.Name = "labelSrDan_DSN";
+            this.labelSrDan_DSN.Size = new System.Drawing.Size(100, 13);
+            this.labelSrDan_DSN.TabIndex = 5;
+            this.labelSrDan_DSN.Text = "Среднее значение";
             // 
-            // label2
+            // labelMinDan_DSN
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(432, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Минимальное значение";
+            this.labelMinDan_DSN.AutoSize = true;
+            this.labelMinDan_DSN.Location = new System.Drawing.Point(432, 30);
+            this.labelMinDan_DSN.Name = "labelMinDan_DSN";
+            this.labelMinDan_DSN.Size = new System.Drawing.Size(128, 13);
+            this.labelMinDan_DSN.TabIndex = 4;
+            this.labelMinDan_DSN.Text = "Минимальное значение";
             // 
-            // label1
+            // labelMaxDan_DSN
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Максимальное значение";
+            this.labelMaxDan_DSN.AutoSize = true;
+            this.labelMaxDan_DSN.Location = new System.Drawing.Point(6, 30);
+            this.labelMaxDan_DSN.Name = "labelMaxDan_DSN";
+            this.labelMaxDan_DSN.Size = new System.Drawing.Size(134, 13);
+            this.labelMaxDan_DSN.TabIndex = 3;
+            this.labelMaxDan_DSN.Text = "Максимальное значение";
             // 
             // comboBoxSr_DSN
             // 
@@ -242,7 +241,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.groupBoxViltr_DSN.Controls.Add(this.buttonViltr_DSN);
             this.groupBoxViltr_DSN.Controls.Add(this.labelVibor_DSN);
             this.groupBoxViltr_DSN.Controls.Add(this.textBoxVibor_DSN);
-            this.groupBoxViltr_DSN.Controls.Add(this.menuStrip1);
             this.groupBoxViltr_DSN.Location = new System.Drawing.Point(328, 12);
             this.groupBoxViltr_DSN.Name = "groupBoxViltr_DSN";
             this.groupBoxViltr_DSN.Size = new System.Drawing.Size(319, 135);
@@ -266,15 +264,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.textBoxVibor_DSN.Name = "textBoxVibor_DSN";
             this.textBoxVibor_DSN.Size = new System.Drawing.Size(178, 20);
             this.textBoxVibor_DSN.TabIndex = 2;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.menuStrip1.Location = new System.Drawing.Point(3, 16);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(30, 116);
-            this.menuStrip1.TabIndex = 5;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // groupBoxSearch_DSN
             // 
@@ -516,6 +505,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.buttonViltr_DSN.Name = "buttonViltr_DSN";
             this.buttonViltr_DSN.Size = new System.Drawing.Size(72, 61);
             this.buttonViltr_DSN.TabIndex = 4;
+            this.toolTip.SetToolTip(this.buttonViltr_DSN, "Выполняет фильтрацию в таблице");
             this.buttonViltr_DSN.UseVisualStyleBackColor = true;
             this.buttonViltr_DSN.Click += new System.EventHandler(this.buttonViltr_DSN_Click);
             // 
@@ -527,6 +517,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.buttonSerch_DSN.Name = "buttonSerch_DSN";
             this.buttonSerch_DSN.Size = new System.Drawing.Size(72, 61);
             this.buttonSerch_DSN.TabIndex = 3;
+            this.toolTip.SetToolTip(this.buttonSerch_DSN, "Выполняет поиск по таблице ");
             this.buttonSerch_DSN.UseVisualStyleBackColor = true;
             this.buttonSerch_DSN.Click += new System.EventHandler(this.buttonSerch_DSN_Click);
             // 
@@ -542,8 +533,8 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.Text = "Пациенты";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelUp_DSN.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupBoxStatistic_DSN.ResumeLayout(false);
+            this.groupBoxStatistic_DSN.PerformLayout();
             this.groupBoxViltr_DSN.ResumeLayout(false);
             this.groupBoxViltr_DSN.PerformLayout();
             this.groupBoxSearch_DSN.ResumeLayout(false);
@@ -582,7 +573,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         private System.Windows.Forms.Button buttonViltr_DSN;
         private System.Windows.Forms.TextBox textBoxReserch_DSN;
         private System.Windows.Forms.Button buttonSerch_DSN;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBoxStatistic_DSN;
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem поВозрастаниюToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem столбецВозрастToolStripMenuItem;
@@ -594,9 +585,9 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         private System.Windows.Forms.ToolStripMenuItem столбецСрокЛеченияToolStripMenuItem1;
         private System.Windows.Forms.Button buttonBackMatrix_DSN;
         private System.Windows.Forms.TextBox textBoxMax_DSN;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelSrDan_DSN;
+        private System.Windows.Forms.Label labelMinDan_DSN;
+        private System.Windows.Forms.Label labelMaxDan_DSN;
         private System.Windows.Forms.ComboBox comboBoxSr_DSN;
         private System.Windows.Forms.ComboBox comboBoxMin_DSN;
         private System.Windows.Forms.ComboBox comboBoxMax_DSN;
@@ -605,7 +596,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         private System.Windows.Forms.Button buttonMin_DSN;
         private System.Windows.Forms.TextBox textBoxSr_DSN;
         private System.Windows.Forms.Button buttonSrZnach_DSN;
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.Label labelVibor_DSN;
     }
 }

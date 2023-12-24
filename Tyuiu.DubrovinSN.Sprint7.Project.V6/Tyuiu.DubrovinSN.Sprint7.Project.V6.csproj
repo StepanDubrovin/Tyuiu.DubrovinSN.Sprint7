@@ -156,5 +156,8 @@
   <ItemGroup>
     <None Include="Resources\free-icon-save-2550350.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\аваа %282%29.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

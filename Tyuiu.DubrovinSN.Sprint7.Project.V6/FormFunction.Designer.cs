@@ -29,11 +29,13 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chartFunction_DSN = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panelNiz_DSN = new System.Windows.Forms.Panel();
+            this.buttonBack_DSN = new System.Windows.Forms.Button();
             this.buttonSaveGraph_DSN = new System.Windows.Forms.Button();
             this.panelMiddle_DSN = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -42,8 +44,8 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.столбецToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.амбулаторноеЛечениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.должностьВрачаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.buttonBack_DSN = new System.Windows.Forms.Button();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.toolTipGraph_DSN = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.chartFunction_DSN)).BeginInit();
             this.panelNiz_DSN.SuspendLayout();
             this.panelMiddle_DSN.SuspendLayout();
@@ -52,21 +54,21 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // 
             // chartFunction_DSN
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartFunction_DSN.ChartAreas.Add(chartArea2);
+            chartArea1.Name = "ChartArea1";
+            this.chartFunction_DSN.ChartAreas.Add(chartArea1);
             this.chartFunction_DSN.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend2.BorderColor = System.Drawing.Color.Black;
-            legend2.Name = "Legend1";
-            this.chartFunction_DSN.Legends.Add(legend2);
+            legend1.BorderColor = System.Drawing.Color.Black;
+            legend1.Name = "Legend1";
+            this.chartFunction_DSN.Legends.Add(legend1);
             this.chartFunction_DSN.Location = new System.Drawing.Point(0, 24);
             this.chartFunction_DSN.Name = "chartFunction_DSN";
             this.chartFunction_DSN.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series2.ChartArea = "ChartArea1";
-            series2.Color = System.Drawing.Color.DarkSlateGray;
-            series2.IsVisibleInLegend = false;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartFunction_DSN.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Color = System.Drawing.Color.DarkSlateGray;
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartFunction_DSN.Series.Add(series1);
             this.chartFunction_DSN.Size = new System.Drawing.Size(1364, 605);
             this.chartFunction_DSN.TabIndex = 0;
             // 
@@ -81,6 +83,16 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.panelNiz_DSN.Size = new System.Drawing.Size(1364, 83);
             this.panelNiz_DSN.TabIndex = 1;
             // 
+            // buttonBack_DSN
+            // 
+            this.buttonBack_DSN.Location = new System.Drawing.Point(12, 12);
+            this.buttonBack_DSN.Name = "buttonBack_DSN";
+            this.buttonBack_DSN.Size = new System.Drawing.Size(72, 61);
+            this.buttonBack_DSN.TabIndex = 2;
+            this.buttonBack_DSN.Text = "Ок";
+            this.buttonBack_DSN.UseVisualStyleBackColor = true;
+            this.buttonBack_DSN.Click += new System.EventHandler(this.buttonBack_DSN_Click);
+            // 
             // buttonSaveGraph_DSN
             // 
             this.buttonSaveGraph_DSN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -89,6 +101,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.buttonSaveGraph_DSN.Name = "buttonSaveGraph_DSN";
             this.buttonSaveGraph_DSN.Size = new System.Drawing.Size(72, 61);
             this.buttonSaveGraph_DSN.TabIndex = 1;
+            this.toolTipGraph_DSN.SetToolTip(this.buttonSaveGraph_DSN, "Сохраняет диаграмму");
             this.buttonSaveGraph_DSN.UseVisualStyleBackColor = true;
             this.buttonSaveGraph_DSN.Click += new System.EventHandler(this.buttonSaveGraph_DSN_Click);
             // 
@@ -152,15 +165,10 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.должностьВрачаToolStripMenuItem.Text = "Столбец \"Должность врача\"";
             this.должностьВрачаToolStripMenuItem.Click += new System.EventHandler(this.должностьВрачаToolStripMenuItem_Click);
             // 
-            // buttonBack_DSN
+            // toolTipGraph_DSN
             // 
-            this.buttonBack_DSN.Location = new System.Drawing.Point(12, 12);
-            this.buttonBack_DSN.Name = "buttonBack_DSN";
-            this.buttonBack_DSN.Size = new System.Drawing.Size(72, 61);
-            this.buttonBack_DSN.TabIndex = 2;
-            this.buttonBack_DSN.Text = "Ок";
-            this.buttonBack_DSN.UseVisualStyleBackColor = true;
-            this.buttonBack_DSN.Click += new System.EventHandler(this.buttonBack_DSN_Click);
+            this.toolTipGraph_DSN.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTipGraph_DSN.ToolTipTitle = "Подсказка";
             // 
             // FormFunction
             // 
@@ -198,5 +206,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
         private System.Windows.Forms.ToolStripMenuItem должностьВрачаToolStripMenuItem;
         private System.Windows.Forms.Button buttonBack_DSN;
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
+        private System.Windows.Forms.ToolTip toolTipGraph_DSN;
     }
 }

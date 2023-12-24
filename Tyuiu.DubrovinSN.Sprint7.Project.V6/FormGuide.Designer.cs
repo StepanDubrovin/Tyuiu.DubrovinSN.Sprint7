@@ -37,7 +37,7 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             // buttonOk_DSN
             // 
             this.buttonOk_DSN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonOk_DSN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonOk_DSN.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.buttonOk_DSN.Location = new System.Drawing.Point(1404, 679);
             this.buttonOk_DSN.Name = "buttonOk_DSN";
             this.buttonOk_DSN.Size = new System.Drawing.Size(53, 47);
@@ -64,7 +64,6 @@ namespace Tyuiu.DubrovinSN.Sprint7.Project.V6
             this.Controls.Add(this.labelRuc_DSN);
             this.Controls.Add(this.buttonOk_DSN);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
             this.Name = "FormGuide";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Руководство по использованию приложения";
